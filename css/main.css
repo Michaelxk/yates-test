@@ -1,8 +1,4 @@
-/* ==========================================================================
-   Punta cana yacht rental's custom styles
-   ========================================================================== */
-
-   @import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;400;900&family=Quicksand:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;400;900&family=Quicksand:wght@300;400;700&display=swap');
    
    :root {
  --darken_blue: #002535;
@@ -76,7 +72,7 @@ h1 {
 }
 
 .wrapper {
-  background-image: url(../img/bg.jpg);
+  background-image: url(https://res.cloudinary.com/michaelxk-com/image/upload/v1623783076/bg_bv0leo.jpg);
   background-position: center;
   background-size: cover;
   width: 100vw;
@@ -363,19 +359,19 @@ h1 {
 }
 
  .services .services-section .service-img1 {
-    background-image: linear-gradient(rgba(9, 112, 135, 0.3), rgba(18, 54, 170, 0.3)), url(../img/Yate\ destacado\ -\ Aicon\ Fly\ 56.JPG);
+    background-image: linear-gradient(rgba(9, 112, 135, 0.3), rgba(18, 54, 170, 0.3)), url(https://res.cloudinary.com/michaelxk-com/image/upload/v1623783153/Yate_destacado_-_Aicon_Fly_56_etizka.jpg);
     background-position: center;
     transition: 0.6s ease;
     background-size: cover;
     
  }
  .services .services-section .service-img2 {
-   background-image: linear-gradient(rgba(9, 112, 135, 0.2), rgba(18, 54, 170, 0.2)),url(../img/catering.jpeg);
+   background-image: linear-gradient(rgba(9, 112, 135, 0.2), rgba(18, 54, 170, 0.2)),url(https://res.cloudinary.com/michaelxk-com/image/upload/v1623783075/catering_gbkq0z.jpg);
    background-size: cover;
    transition: 0.6s ease;
 }
 .services .services-section .service-img3 {
-   background-image: linear-gradient(rgba(9, 112, 135, 0.2), rgba(18, 54, 170, 0.2)), url(../img/mujer-pie-sobre-nariz-yate-dia-soleado-verano-brisa-desarrollo-cabello_231208-8349.jpeg);
+   background-image: linear-gradient(rgba(9, 112, 135, 0.2), rgba(18, 54, 170, 0.2)), url(https://res.cloudinary.com/michaelxk-com/image/upload/v1623783077/mujer-pie-sobre-nariz-yate-dia-soleado-verano-brisa-desarrollo-cabello_231208-8349_ukorzo.jpg);
    transition: 0.6s ease;
    background-size: cover;
 }
@@ -384,7 +380,7 @@ h1 {
 /* mas exclusivo desktop */
 
 .mas-exclusivo  {
-   background-image: url(../img/mas-exclusivo.jpeg);
+   background-image: url(https://res.cloudinary.com/michaelxk-com/image/upload/v1623783077/mas-exclusivo_oxzhfe.jpg);
    background-size: cover;
    background-position: center;
    height: 500px;
@@ -435,7 +431,7 @@ h1 {
  .yates-recomendados .cranchi50 .cardTop {
    transition: 0.4s all ease;
    height: 65%;
-   background: url(../img/nuestra-flota/yates/Fairline-50/bg.jpeg);
+   background: url(https://res.cloudinary.com/michaelxk-com/image/upload/v1623783084/Yate_Destacado_-_Fairlien_50_c3lunj.jpg);
    background-size: cover;
    background-position: center;
 
@@ -539,7 +535,7 @@ h1 {
 
 .services-diversion,
 .services-celebraciones {
-   background-image: linear-gradient(rgba(9, 112, 135, 0.2), rgba(51, 74, 146, 0.2)), url(../img/novias-celebrando-fiesta-abriendo-champan-dos-chicas-divierten-su-enorme-yate-blanco_161422-198.jpeg);
+   background-image: linear-gradient(rgba(9, 112, 135, 0.2), rgba(51, 74, 146, 0.2)), url(https://res.cloudinary.com/michaelxk-com/image/upload/v1623783077/novias-celebrando-fiesta-abriendo-champan-dos-chicas-divierten-su-enorme-yate-blanco_161422-198-2_iuz2oj.jpg);
    background-size: cover;
    background-position: center;
    height: 500px;
@@ -583,7 +579,7 @@ h1 {
 }
 
 .services-diversion {
-   background-image: linear-gradient(rgba(9, 112, 135, 0.2), rgba(18, 54, 170, 0.2)), url(../img/397407.jpeg);
+   background-image: linear-gradient(rgba(9, 112, 135, 0.2), rgba(18, 54, 170, 0.2)), url(https://res.cloudinary.com/michaelxk-com/image/upload/v1623783074/397407_pkvjsm.jpg);
 
 }
 
@@ -627,7 +623,7 @@ h1 {
 
 
 .vive-la-experiencia-banner {
-   background-image: url(../img/paisaje.jpeg);
+   background-image: url(https://res.cloudinary.com/michaelxk-com/image/upload/v1623786611/paisaje_itydct.jpg);
    background-attachment: fixed;
    background-position: center;
    background-size: cover;
@@ -772,7 +768,7 @@ h1 {
 -------------------------------------------------------*/
 .testimonials {
    width: 100vw;
-   background-image: url(../img/testimonials-bg\ 1.png);
+   background-image: url(https://res.cloudinary.com/michaelxk-com/image/upload/v1623785813/testimonial1pg_psxct2.jpg);
    background-size: cover;
    background-repeat: no-repeat;
    height: 100vh;
@@ -1049,7 +1045,7 @@ q {font-style: italic;}
    .quienes-somos-page {
       height: 70vh;
       width: 100vw;
-      background-image: url(../img/quienes-somosBG.jpg);
+      background-image: url(https://res.cloudinary.com/michaelxk-com/image/upload/v1623785480/quienes-somosBG1_pdemwg.jpg);
       background-size: cover;
       background-position: center;
       display: grid;
@@ -1177,36 +1173,6 @@ q {font-style: italic;}
       justify-content: center;
    }
 
-
- 
-   .content-info-quienessomos-img {
-      background-image: url(../img/YATE1.jpg);
-      background-size: cover;
-      height: 400px;
-   }
-
-   .content-info-quienessomos-img2  {
-      display: flex;
-      align-items: center;
-      justify-content: center;
- 
-   }
-
-   .content-info-quienessomos-img2 .fas {
-      color: var(--regular_blue);
-      font-size: 5em;
-      animation: about-arrow infinite 1s linear;
-   }
-
-   @keyframes about-arrow {
-     from {
-        transform: translateY(0%);
-     }
-     to {
-        transform: translateY(100%);
-     }
-   }
-
 /* ==========================================================================
       estilos pagina de servicios
    ========================================================================== */
@@ -1257,15 +1223,15 @@ q {font-style: italic;}
    }
 
    .contentInfo-services-img1 {
-     background-image: url(../img/yates1.jpg);
+     background-image: url(https://res.cloudinary.com/michaelxk-com/image/upload/v1623785834/yates1_ya7hks.jpg);
      background-size: cover;
    }
    .contentInfo-services-img2 {
-      background-image: url(../img/tres-amigos-europeos-moda-sentados-barco-almorzando-bebiendo-champan-expresando-alegria-placer-cada-ano-reservan-entradas-paises-calidos-invierno_176420-15425.jpeg);
+      background-image: url(https://res.cloudinary.com/michaelxk-com/image/upload/v1623784457/tres-amigos-europeos-moda-sentados-barco-almorzando-bebiendo-champan-expresando-alegria-placer-cada-ano-reservan-entradas-paises-calidos-invierno_176420-15425_yjt6gk.jpg);
       background-size: cover;
     }
     .contentInfo-services-img3 {
-      background-image: url(../img/transporte.jpg);
+      background-image: url(https://res.cloudinary.com/michaelxk-com/image/upload/v1623783156/transporte_s5gzto.jpg);
       background-size: cover;
     }
    .services-ocaciones {
@@ -1297,7 +1263,7 @@ q {font-style: italic;}
 
    .services-page-banner2 .banner2-img {
      height: 600px;
-     background-image: url(../img/99.jpeg);
+     background-image: url(https://res.cloudinary.com/michaelxk-com/image/upload/v1623783075/index/99_y6ov1l.jpg);
      background-size: cover;
      background-position: right;
      padding: 2em;
@@ -1334,14 +1300,6 @@ q {font-style: italic;}
   line-height: 30px;
   font-size: 1.2em;
 }
-
-
-.content-services-page .article1 .banner-services-title,
-.content-services-page .article2 .banner-services-title,
-.content-services-page .article3 .banner-services-title {
-   opacity: 0;
-}
-
 .servicios-generales-info h3 {
    font-weight: bolder;
 }
@@ -1605,7 +1563,6 @@ margin-top: 10em
    color: var(--green);
    text-align: center;
 }
-
 .yates-especificaciones-generales .img-boat {
    height: 600px;
    background-size: cover;
@@ -1889,7 +1846,7 @@ background-image: url(../img/nuestra-flota/yates/Aicon-Fly-56/aiconFly.JPG);
 }
 
 .destinos-banner {
-   background-image: url(../img/destinos/Drone\ 08.jpg);
+   background-image: url(https://res.cloudinary.com/michaelxk-com/image/upload/v1623782156/Drone_08_oluzo2.jpg);
    background-size: cover;
    background-position: center;
    height: 400px;
@@ -2272,7 +2229,7 @@ background-image: url(../img/nuestra-flota/yates/Aicon-Fly-56/aiconFly.JPG);
 
 
     .wrapper .swiper-container {
-      margin-top: 4em;
+      margin-top: -5em;
    }
 
    .wrapper .swiper-container img {
@@ -2321,6 +2278,10 @@ background-image: url(../img/nuestra-flota/yates/Aicon-Fly-56/aiconFly.JPG);
  .services-celebraciones h3 {
     font-size: 2.5em;
  }
+ 
+ 
+  
+  
 
     .vive-la-experiencia-banner h2 {
       font-size: 2.5em;
@@ -2361,11 +2322,6 @@ background-image: url(../img/nuestra-flota/yates/Aicon-Fly-56/aiconFly.JPG);
 
 }
 
-@media screen and (max-width:1150px) {
-   .wrapper .swiper-container {
-      margin-top: 0em;
-   }
-} 
 
  @media screen and  (min-width:1001px) and (max-width: 1024px) {
    .menu a {
@@ -2373,7 +2329,7 @@ background-image: url(../img/nuestra-flota/yates/Aicon-Fly-56/aiconFly.JPG);
     }
 
     .wrapper .swiper-container {
-       margin-top: 0em;
+       margin-top: -5em;
     }
 
     .wrapper .swiper-container img {
@@ -2388,6 +2344,9 @@ background-image: url(../img/nuestra-flota/yates/Aicon-Fly-56/aiconFly.JPG);
        margin-top: -.1em;
      }
  
+
+
+
     /* nuestra flota */
 
     .nuestraFlota-container .col-lg-3 {
@@ -2499,7 +2458,7 @@ background-image: url(../img/nuestra-flota/yates/Aicon-Fly-56/aiconFly.JPG);
 
 .wrapper .swiper-container  {
 
-  margin-top: 6em;
+  margin-top: -0px;
 
 }
 
@@ -2835,11 +2794,9 @@ background-image: url(../img/nuestra-flota/yates/Aicon-Fly-56/aiconFly.JPG);
    .content-services-page .article1 .banner-services-title,
    .content-services-page .article2 .banner-services-title,
    .content-services-page .article3 .banner-services-title {
-      opacity: .8;
-      padding: 5px;
+      opacity: 0;
    }
 
- 
    .services-ocaciones {
       width: 100vw;
       margin: 0 auto;
@@ -2943,18 +2900,16 @@ background-image: url(../img/nuestra-flota/yates/Aicon-Fly-56/aiconFly.JPG);
       width: 100vw;
    }
 
-  
-   .yates-especificaciones-generales .especificaciones-info {
-      width: 0vw; 
-      display: flex;
-      flex-direction: column;
+   .yates-especificaciones-generales .especificaciones-info img {
+      
    }
 
-   .nuestraFlota-especificaciones-strong {
-    width: 70vw;
-    display: grid;
-    grid-template-columns: 1fr;
+   .yates-especificaciones-generales .especificaciones-info {
+      width: 50vw; 
+      margin: 0 auto;
    }
+
+
 
 
    /* destinos */
@@ -3014,19 +2969,22 @@ background-image: url(../img/nuestra-flota/yates/Aicon-Fly-56/aiconFly.JPG);
 
 @media screen and (min-width:761px) and (max-width: 800px)  {
    
-  
+   .content-info {
+      margin-top: 5em;
+    }
+   
   .wrapper .swiper-container {
-     margin-top: 5em;
+       margin-top: 3em;
    }
 
 }
 
 
-@media screen and (min-width: 751px) and (max-width: 760px) {
- 
-   .wrapper .swiper-container {
-      margin-top: -5em;
-    }
+@media screen and (min-width: 701px) and (max-width: 760px) {
+   
+   .content-info {
+      margin-top: 5em;
+   }
    
    .services .service-title {
       margin-top: -4em;
@@ -3070,7 +3028,12 @@ background-image: url(../img/nuestra-flota/yates/Aicon-Fly-56/aiconFly.JPG);
 
 
 @media screen and (max-width: 750px){
-
+   
+  
+   .content-info .titles {
+      margin-top: 2em;
+    }
+ 
  
    .wrapper .swiper-container {
       margin-top: -4em;
@@ -3214,8 +3177,14 @@ background-image: url(../img/nuestra-flota/yates/Aicon-Fly-56/aiconFly.JPG);
 
 @media screen and (min-width:601px) and (max-width: 700px) {
 
+
+   .content-info .titles {
+      margin-top: 2em;
+    }
+ 
+ 
    .wrapper .swiper-container {
-      margin-top: -4em;
+      margin-top: -3.6em;
     }
 
   .service-title {
@@ -3231,9 +3200,14 @@ background-image: url(../img/nuestra-flota/yates/Aicon-Fly-56/aiconFly.JPG);
 
 @media screen and (min-width:451px) and (max-width: 600px) {
 
+
+   .content-info .titles {
+      margin-top: 2em;
+    }
+ 
  
    .wrapper .swiper-container {
-      margin-top: -4em;
+      margin-top: -3.5em;
     }
 
    .main-info2 {
@@ -3359,39 +3333,17 @@ background-image: url(../img/nuestra-flota/yates/Aicon-Fly-56/aiconFly.JPG);
      }
 
    
-  
  
    
    }
-
-   @media screen and (min-width:350px) and (max-width: 450px) {
-      .wrapper .swiper-container {
-         margin-top: -12em;
-      }
-
-   .wrapper .home-carousel-content {
-      width: 80%;
-      height: 70%;
-   }
-
-   .main-carousel .swiper-slide a {
-      width: 100px;
-      height: 120px;
-      margin: 5px;
-   }
-
-   .swiper-slide img {
-      width: 100%;
-      height: 100%;
-    }
-   }
-
- 
-
-@media screen and (min-width:200px) and (max-width: 350px) {
+@media screen and (min-width:300px) and (max-width: 450px) {
 
       /*  index */
 
+   
+   .content-info .titles {
+     margin-top: 3.5em;
+   }
 
    .content-info .titles h2 {
        font-size: 2.5em;
@@ -3401,12 +3353,12 @@ background-image: url(../img/nuestra-flota/yates/Aicon-Fly-56/aiconFly.JPG);
    }
 
   .wrapper .swiper-container {
-      margin-top: -11.5em;
+      margin-top: -3em;
    }
 
    .wrapper .home-carousel-content {
       width: 75%;
-      height: 70%;
+      height: 100%;
    }
 
    .main-carousel .swiper-slide a {
@@ -3508,17 +3460,13 @@ background-image: url(../img/nuestra-flota/yates/Aicon-Fly-56/aiconFly.JPG);
       padding: 1.5em;
    } 
 
-   .yates-recomendados {
-    margin: 0 auto;
-   }
-
    .yates-recomendados h2 {
       margin-top: 2em;
    }
 
    .yates-recomendados .container .card {
       width: 300px;
-      margin-left: -2em;
+      margin-left: -1.5em;
    } 
     
 
@@ -3554,8 +3502,7 @@ background-image: url(../img/nuestra-flota/yates/Aicon-Fly-56/aiconFly.JPG);
       height: 300px;
    }
    .testimonials {
-
-      height: 650px;
+      height: 600px;
       width: 100vw;
       background-image: none;
       background-color: #ececec;
@@ -3563,12 +3510,13 @@ background-image: url(../img/nuestra-flota/yates/Aicon-Fly-56/aiconFly.JPG);
  .testimonials-title {
    margin-top: 2em;
  }
-
-
- .testimonials-title h5,
- .testimonials-title h2 {
-    font-size: 1.3em;
+ .testimonials-title h5 {
+    font-size: 1.2em;
  }
+ .testimonials-title h2 {
+   font-size: 1.2em;
+ }
+
  .testimonials-title .fas {
    font-size: 1.2em;
  }
@@ -3592,12 +3540,6 @@ background-image: url(../img/nuestra-flota/yates/Aicon-Fly-56/aiconFly.JPG);
          font-size: 2em;
       }
 
-      .our-team h2 {
-         font-size: 2em;
-         margin-bottom: 1em;
-      }
-
-
 
       .footer .formulario {
          width: 90vw;
@@ -3617,10 +3559,6 @@ background-image: url(../img/nuestra-flota/yates/Aicon-Fly-56/aiconFly.JPG);
 
        /* quienes somos */
 
-       .main-quienes-somos {
-          margin-top: 3em;
-          grid-column: 5 / 10;
-       }
        .quienes-somos-page h1 {
           font-size: 1.5em;
        }
@@ -3629,17 +3567,9 @@ background-image: url(../img/nuestra-flota/yates/Aicon-Fly-56/aiconFly.JPG);
           font-size: 1.2em;
        }
 
-       .quienes-somos-container {
-          padding: 1em 0.2em;
-       }
-
        .quienes-somos-info h2, 
        .quienes-somos-info:nth-child(2) {
          font-size: 2em;
-       }
-
-       .porque-nos-prefieren-tittle h2 {
-          padding: 5px;
        }
 
         /* service page */
@@ -3652,11 +3582,6 @@ background-image: url(../img/nuestra-flota/yates/Aicon-Fly-56/aiconFly.JPG);
         .content-services-page h3 {
          font-size: 2em;
          margin-top: 5em;
-        }
-
-        .services-ocaciones .card {
-         margin: 0 auto;
-         margin-left: -3em;
         }
 
         .content-services-page .article1 a,
@@ -3681,11 +3606,11 @@ background-image: url(../img/nuestra-flota/yates/Aicon-Fly-56/aiconFly.JPG);
 
         .services-ocaciones .card {
            width: 350px;
+
         }
 
         .services-page-banner2 .banner2-img {
            background-position: center;
-           height: 300px;
         }
 
       .content-services-page .article1 .content-info-services,
@@ -3707,11 +3632,6 @@ background-image: url(../img/nuestra-flota/yates/Aicon-Fly-56/aiconFly.JPG);
 
       .nuestraFlota-header {
          height: 200px;
-         
-      }
-
-      .nuestraFlota-header h3 {
-         margin-top: 3em;
       }
       
       .nuestraFlota-header h2 {
@@ -3744,59 +3664,7 @@ background-image: url(../img/nuestra-flota/yates/Aicon-Fly-56/aiconFly.JPG);
       width: 150px;
       margin-top: 2em;
    }
-
- 
-   .nuestra-flota-content .yates-especificaciones-generales .img-boat {
-    width: 100%;
-   }
-
-   .yates-especificaciones-generales .flotas-icono-especificaciones {
-      margin: 0 auto;
-
-   }
-
-   .especificaciones-info {
-      display: flex;
-      flex-direction: column;
-      justify-content: space-around;
-   
-   }
-
-   .nuestra-flota-content .yates-especificaciones-generales .img-boat {
-      width: 100%;
-     }
-  
-    
-
-  .yates-especificaciones-generales .nuestraFlota-especificaciones-strong li {
-     width: 90vw;  
-     margin-left: -4.8em;
-     font-size: 1em;
-   } 
-   
-   .nuestra-flotaIcon-section {
-      margin-top:  -5em;
-   }
-
-   
-   .que-llevar h3 {
-      font-size: 2em;
-   }
-   .que-llevar h4 {
-      font-size: 1.5em;
-   }
-   .que-llevar .que-llevar-items {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-   }
-
-   .proceso img {
-      width: 200px;
-      height: 200px;
-   }
-
-   /* destinos */
+di   /* destinos */
      
    .pagina-destinos_wrapper h4 {
       font-size: 1em;
@@ -3883,5 +3751,3 @@ background-image: url(../img/nuestra-flota/yates/Aicon-Fly-56/aiconFly.JPG);
    }
 
 }
-
-
