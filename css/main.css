@@ -1,0 +1,3887 @@
+/* ==========================================================================
+   Punta cana yacht rental's custom styles
+   ========================================================================== */
+
+   @import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;400;900&family=Quicksand:wght@300;400;700&display=swap');
+   
+   :root {
+ --darken_blue: #002535;
+ --secundary_darken: #003851;
+ --green: #21646D;
+ --lighter_blue: #bfd2d9;
+ --regular_blue: #3b89ad;
+ --white: #fff;
+}
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+body {
+   font-family: 'Lato', sans-serif;
+   overflow-x: hidden;
+}
+
+/* Estilos generales */
+
+h1 {
+   color: var(--green);
+}
+
+.button {
+  padding: 10px 30px;
+  border: none;
+  border-radius: 30px;
+  background-color: var(--regular_blue);
+  color: var(--white);
+  -webkit-box-shadow: 7px 5px 15px -5px rgba(59,137,173,0.87); 
+  box-shadow: 7px 5px 15px -5px rgba(59,137,173,0.87);
+}
+.button:hover {
+   box-shadow: none;
+}
+
+.img-timon {
+   display: flex;
+   justify-content: center;
+}
+
+.social-network-absolute {
+   position: fixed;
+   bottom: 20px;
+   left: 20px;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   z-index: 1;
+}
+.social-network-absolute a {
+   margin-top: 4px;
+}
+.social-network-absolute img {
+   width: 60px;
+   padding: 4px;
+   cursor: pointer;
+}
+
+.divider {
+  height: 4px;
+  width: 50px;
+  background: var(--regular_blue);
+}
+.header {
+  z-index: 1;
+  transition: 0.6s;
+}
+
+.wrapper {
+  background-image: url(../img/bg.jpg);
+  background-position: center;
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+  background-attachment: fixed;
+  max-width: 100%;
+}
+
+/* Estilos Navbar */
+.navbar-content {
+  width: 100vw;
+}
+.navbar {
+  display: flex;
+  padding: 2em;
+
+}
+.sticky {
+  background-color: #002535;
+  -moz-box-shadow: 0px 2px 14px 0px rgba(12,71,82,1);
+  box-shadow: 0px 2px 14px 0px rgba(12,71,82,.7);
+}
+
+.navbar .logo {
+  margin-left: 4em;   
+  margin-top: -10px;
+  width: 170px;
+}
+.navbar .menu-logo-mobile {
+   display: none;
+}
+
+/* Menu
+-------------------------------------------------------*/
+
+.menu {
+   display: flex;
+   position: relative;
+   margin-top: 10px;
+}
+.menu li {
+   list-style: none;
+   margin-top: 7px;
+}
+.menu a {
+   text-decoration: none;
+   margin-right: 3em;
+   padding: 1em 1em;
+   color: var(--white);
+  
+}
+.menu a:hover {
+   background-color: var(--regular_blue);
+   transition: all .6s;
+   color: #fff;
+}
+
+.navbar .dropdown-item {
+   color: var(--darken_blue);
+}
+
+.menu .dropdown-mobile {
+   display: none;
+   margin-top: 2.5em;
+ }
+
+
+.navbar-content {
+   background-color: var(--secundary_darken);
+}
+
+/* Menu hamburguesa
+-------------------------------------------------------*/
+
+.navbar .menu-bar {
+   display: flex;
+   flex-direction: column;
+   display: none;
+}
+.menu-bar .line-1,
+.menu-bar .line-2,
+.menu-bar .line-3 {
+   margin-bottom: 5px;
+   border-radius: 5px;
+   height: 5px;
+   background-color: var(--white);
+}
+.navbar .menu-bar .line-1 {
+   width: 40px;
+}
+.navbar .menu-bar .line-2 {
+   width: 25px;
+}
+.navbar .menu-bar .line-3 {
+   width: 15px;
+}
+
+/* Content-info
+-------------------------------------------------------*/
+
+.content-info {
+   display: grid;
+   grid-template-columns: repeat(12, 1fr);
+   grid-template-rows: repeat(6, 1fr);
+   color: var(--white);
+}
+.content-info .titles {
+  grid-column: 2/5;
+  grid-row: 3/8;
+  
+}
+.content-info .titles span {
+   font-size: 2em;
+   font-weight: lighter;
+}
+.titles h2 {
+   font-size: 6em;
+}
+.content-info .paragraph-info {
+   grid-column: 8/12;
+   grid-row: 3 / 5;
+}
+.content-info .paragraph-info p {
+   letter-spacing: 2px;
+}
+.wrapper .main-carousel {
+   width: 100vw;
+   height: 200px;
+   display: flex;
+   justify-content: flex-end;
+   align-items: flex-end;
+   margin-top: 8em;
+}
+.wrapper .home-carousel-content {
+   width: 50%;
+   height: 100%;
+}
+.swiper-container {
+   width: 100%;
+   height: 100%;
+ }
+ .swiper-slide {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   position: relative;
+ }
+ .swiper-slide img {
+   display: block;
+   width: 100%;
+   height: 200px;
+ }
+
+ @media only screen and (min-width: 769px) {
+   .swiper-slide:first-child {
+     transition: transform 100ms;
+   }
+   .swiper-slide:first-child img {
+     transition: box-shadow 500ms;
+   }
+   .swiper-slide.swiper-slide-active:first-child {
+     transform: translateX(50%);
+     z-index: 2;
+   }
+   .swiper-slide.swiper-slide-active:first-child img {
+     box-shadow: 0px 32px 80px rgba(0, 0, 0, 0.35);
+   }
+   .swiper-slide:nth-child(2) {
+     transition: transform 100ms;
+   }
+   .swiper-slide.swiper-slide-next:nth-child(2) {
+     transform: translateX(55%);
+     z-index: 1;
+   }
+   .swiper-container[dir="rtl"]
+     .swiper-slide.swiper-slide-active:first-child {
+     transform: translateX(-50%);
+   }
+   .swiper-container[dir="rtl"]
+     .swiper-slide.swiper-slide-next:nth-child(2) {
+     transform: translateX(-55%);
+   }
+ }
+
+
+/* About us
+-------------------------------------------------------*/
+.quienes-somos {
+   padding-top: 3em;
+}
+.quienes-somos .main {
+   padding-top: 7em;
+}
+
+.quienes-somos .h2,
+.services-title,  
+.gallery__title,
+.our-team h2,
+.services h2,
+.FAQ h2 {
+  font-size: 3em;
+  color: var(--green);
+  text-align: center;
+}
+.main {
+   padding: 3em;
+}
+.main .container-fluid{
+   display: grid;
+   grid-template-columns: repeat(2,1fr);
+   margin-top: 5em;
+}
+
+.main-info {
+   margin-top: -4em;
+}
+
+.main-info2 {
+   padding: 2.5em;
+}
+.main-info h2,
+.our-team h3 {
+   color: var(--regular_blue);
+   font-size: 1.5em;
+}
+.main p {
+   color: var(--secundary_darken);
+}
+.main-info p {
+   font-size: 1.2em;
+}
+.main .read-more {
+   display: none;
+ }
+
+
+  /* Services
+-------------------------------------------------------*/
+.service-title h4 {
+   color: #21646D;
+   font-weight: normal;
+}
+.servicesr .services-section {
+   margin-top: 10em;
+ }
+
+ .services-section .service-img1,
+ .services-section .service-img2,
+ .services-section .service-img3  {
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.services-section .button {
+   display: none;
+   background: none;
+   border: 2px solid #fff;
+   text-transform: uppercase;
+   padding: 10px 50px;
+   text-decoration: none;
+}
+
+.services-section .service-img1:hover,
+.services-section .service-img2:hover,
+.services-section .service-img3:hover {
+   transform: scale(1.1);
+   z-index: 1;
+   -webkit-box-shadow: 7px 5px 15px -5px rgba(59,137,173,0.87); 
+   box-shadow: 7px 5px 15px -5px rgba(59,137,173,0.87);
+   color: #002535;
+}
+
+.services-section .service-img1:hover .button,
+.services-section .service-img2:hover .button,
+.services-section .service-img3:hover .button {
+   display: block;
+   z-index: 1;
+   background-color: var(--regular_blue);
+}
+
+ .services .services-section .service-img1 {
+    background-image: linear-gradient(rgba(9, 112, 135, 0.3), rgba(18, 54, 170, 0.3)), url(../img/Yate\ destacado\ -\ Aicon\ Fly\ 56.JPG);
+    background-position: center;
+    transition: 0.6s ease;
+    background-size: cover;
+    
+ }
+ .services .services-section .service-img2 {
+   background-image: linear-gradient(rgba(9, 112, 135, 0.2), rgba(18, 54, 170, 0.2)),url(../img/catering.jpeg);
+   background-size: cover;
+   transition: 0.6s ease;
+}
+.services .services-section .service-img3 {
+   background-image: linear-gradient(rgba(9, 112, 135, 0.2), rgba(18, 54, 170, 0.2)), url(../img/mujer-pie-sobre-nariz-yate-dia-soleado-verano-brisa-desarrollo-cabello_231208-8349.jpeg);
+   transition: 0.6s ease;
+   background-size: cover;
+}
+
+
+/* mas exclusivo desktop */
+
+.mas-exclusivo  {
+   background-image: url(../img/mas-exclusivo.jpeg);
+   background-size: cover;
+   background-position: center;
+   height: 500px;
+   padding: 5em;
+   color: #fff;
+}
+.mas-exclusivo h3 {
+   color: var(--regular_blue);
+   margin-top: .6em;
+   font-size: 2.5em;
+}
+.mas-exclusivo h4 {
+   color: var(--darken_blue);
+   font-size: 4em;
+}
+
+.mas-exclusivo button {
+   height: 3em;
+   width: 12em;
+   border-radius: 50px;
+   text-transform: uppercase;
+   background-color: var(--secundary_darken);
+   color: #fff;
+   border: none;
+   text-align: center;
+   -webkit-box-shadow: 7px 5px 15px -5px rgba(59,137,173,0.87); 
+   box-shadow: 7px 5px 15px -5px rgba(59,137,173,0.5);
+}
+
+
+.yates-recomendados .container {
+   display: flex;
+   justify-content: space-evenly;
+   flex-wrap: wrap;
+}
+.yates-recomendados .fairline50 .card,
+.yates-recomendados .searay54 .card,
+.yates-recomendados .cranchi50 .card {
+   background: #fff;
+   margin-top: 40px;
+   height: 400px;
+   width: 400px;
+   transition: 0.6s all ease;
+}
+
+ .yates-recomendados .fairline50 .cardTop,
+ .yates-recomendados .searay54 .cardTop,
+ .yates-recomendados .cranchi50 .cardTop {
+   transition: 0.4s all ease;
+   height: 65%;
+   background: url(../img/nuestra-flota/yates/Fairline-50/bg.jpeg);
+   background-size: cover;
+   background-position: center;
+
+ }
+
+ .yates-recomendados .cranchi50 .cardTop {
+   transition: 0.4s all ease;
+   height: 65%;
+   background: url(../img/nuestra-flota/yates/Cranchi-50/bg.jpeg);
+   background-size: cover;
+   background-position: center;
+
+ }
+
+ .yates-recomendados .searay54 .cardTop {
+   background: url(../img/nuestra-flota/yates/Sea-Ray-44/Nuevaimagen1.JPG);
+   background-size: cover;
+   background-position: center;
+ }
+ 
+ .yates-recomendados .fairline50 .cardBottom,
+ .yates-recomendados .searay54 .cardBottom,
+ .yates-recomendados .cranchi50 .cardBottom  {
+   height: 35%;
+   text-wrap: normal;
+   transition: 0.4s all ease;
+ }
+ 
+ .yates-recomendados .fairline50 .cardText,
+ .yates-recomendados .searay54 .cardText,
+ .yates-recomendados .cranchi50 .cardText {
+   min-height: 100%;
+   padding: 20px;
+ }
+ 
+ .yates-recomendados .fairline50 .cardTitle,
+ .yates-recomendados .searay54 .cardTitle,
+ .yates-recomendados .cranchi50 .cardTitle  {
+   font-size: 24px;
+   font-weight: 700;
+ }
+ 
+ .yates-recomendados .fairline50 .cardInfo,
+ .yates-recomendados .searay54 .cardInfo,
+ .yates-recomendados .cranchi50 .cardInfo {
+   padding-top: 10px;
+   font-size: 1.5em;
+   font-weight: 500;
+   color: var(--regular_blue);
+ }
+ 
+ 
+ .yates-recomendados .fairline50 .cardHoverText,
+ .yates-recomendados .searay54 .cardHoverText,
+ .yates-recomendados .cranchi50 .cardHoverText {
+   visibility: hidden;
+ }
+
+ .cranchi50 .card-body,
+ .searay54 .card-body,
+ .fairline50 .card-body  {
+   background-color: var(--regular_blue);
+   text-align: center;
+   width: 100%;
+ }
+ 
+
+
+ .cranchi50 .card-body a,
+ .searay54 .card-body a,
+ .fairline50 .card-body a {
+   color: #fff;
+   text-decoration: none;
+
+ }
+
+ /* Hover affects */
+ 
+ .card:hover {
+   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+ }
+  
+ .card:hover .cardHoverText {
+   visibility: visible;
+   transition: 0.4s all ease;
+   transition-delay: 0.1999s;
+ }
+ 
+ .card:hover .cardBottom {
+   transition: 0.4s all ease;
+   height: 65%;
+   opacity: 1;
+ }
+ 
+ .card:hover .cardTop {
+   height: 40%;
+   opacity: 0.8;
+   transition: 0.4s all ease;
+ }
+
+
+.services-diversion,
+.services-celebraciones {
+   background-image: linear-gradient(rgba(9, 112, 135, 0.2), rgba(51, 74, 146, 0.2)), url(../img/novias-celebrando-fiesta-abriendo-champan-dos-chicas-divierten-su-enorme-yate-blanco_161422-198.jpeg);
+   background-size: cover;
+   background-position: center;
+   height: 500px;
+   padding: 5em;
+   color: #fff;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+}
+
+.services-diversion p,
+.services-celebraciones p {
+   padding: 3em;
+   font-size: 1.3em;
+   display: none;
+}
+
+.services-diversion:hover p,
+.services-celebraciones:hover p {
+   display: block;
+}
+
+.services-diversion:hover,
+.services-celebraciones:hover {
+   background: var(--regular_blue);
+   transition: ease-in .3s;
+   
+}
+.services-diversion:hover .h3 {
+   display: none;
+}
+.services-celebraciones:hover .h3 {
+   display: none;
+}
+
+
+.services-diversion h3,
+.services-celebraciones h3 {
+   font-size: 3em;
+}
+
+.services-diversion {
+   background-image: linear-gradient(rgba(9, 112, 135, 0.2), rgba(18, 54, 170, 0.2)), url(../img/397407.jpeg);
+
+}
+
+
+
+
+/* gallery 
+-------------------------------------------------------*/
+.index-gallery {
+   width: 90vw; 
+   margin: 0 auto;
+   margin-bottom: 5em;
+}
+
+.index-gallery .gallery__title {
+   padding-top: 1.5em;
+   padding-bottom: .5em;
+}
+ 
+.index-gallery .row .foto1 img,
+.index-gallery .row .foto5 img {
+  height: 450px;
+  max-width: 100%;
+}
+.index-gallery .row .foto2 img,
+.index-gallery .row .foto3 img,
+.index-gallery .row .foto4 img {
+   height: 250px;
+}
+
+ .index-gallery .row .foto5 img {
+   margin-top: -200px;
+}
+
+.index-gallery img {
+   width: 100%;
+   margin-bottom: 1.5em;
+   height: auto;
+}
+
+
+
+.vive-la-experiencia-banner {
+   background-image: url(../img/paisaje.jpeg);
+   background-attachment: fixed;
+   background-position: center;
+   background-size: cover;
+   height: 450px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   padding: 3em;
+   max-width: 100%;
+}
+.vive-la-experiencia-banner h2 {
+   color: #fff;
+   font-size: 3.5em;
+   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+   letter-spacing: 5px;
+
+}
+.vive-la-experiencia-banner img  {
+   width: 200px;
+   height: 100px;
+}
+
+
+/* Proceso
+-------------------------------------------------------*/
+.proceso {
+   display: grid;
+   grid-template-columns: repeat(10,1fr);
+   align-items: center;
+   justify-content: center;
+   padding: 3em;
+   background-image: url(../img/contact-pics/nikldn-t-6GW8T6Jsc-unsplash\ 1.png);
+   color: #fff;
+   background-attachment: fixed;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.proceso h2 {
+   font-size: 4em;
+}
+.proceso h2:nth-child(2) {
+   color: var(--regular_blue);
+}
+.proceso-info {
+   grid-column: 2/6;
+}
+.proceso-img {
+  grid-column: 7/10;
+}
+.proceso p {
+   font-size: 1.5em;
+   font-weight: lighter;
+}
+
+/* Experience
+-------------------------------------------------------*/
+.experience {
+   background-color: #101F2E;
+   padding-top: 5em;
+}
+.experience h2 {
+   font-size: 3em;
+   color: #fff;
+}
+.sectionClass {
+   padding: 20px 0px 50px 0px;
+   position: relative;
+   display: block;
+ }
+ .fullWidth {
+   width: 100%;
+   display: table;
+   padding: 0;
+   min-height: 1px;
+   height: 100%;
+   position: relative;
+ }
+ .projectFactsWrap{
+     display: flex;
+   margin-top: 30px;
+   flex-direction: row;
+   flex-wrap: wrap;
+ }
+ .projectFactsWrap .item{
+   width: 25%;
+   height: 100%;
+   padding: 50px 0px;
+   text-align: center;
+ }
+ .projectFactsWrap .item:nth-child(1){
+   background: rgb(16, 31, 46);
+ }
+ .projectFactsWrap .item:nth-child(2){
+   background: rgb(18, 34, 51);
+ }
+ .projectFactsWrap .item:nth-child(3){
+   background: rgb(21, 38, 56);
+ }
+ .projectFactsWrap .item:nth-child(4){
+   background: rgb(23, 44, 66);
+ }
+ .projectFactsWrap .item p.number{
+   font-size: 40px;
+   padding: 0;
+   font-weight: bold;
+ }
+ .projectFactsWrap .item p{
+   color: rgba(255, 255, 255, 0.8);
+   font-size: 18px;
+   margin: 0;
+   padding: 10px;
+   font-family: 'Open Sans';
+ }
+ .projectFactsWrap .item span{
+   width: 60px;
+   background: rgba(255, 255, 255, 0.8);
+   height: 2px;
+   display: block;
+   margin: 0 auto;
+ }
+ .projectFactsWrap .item i{
+   vertical-align: middle;
+   font-size: 50px;
+   color: rgba(255, 255, 255, 0.8);
+ }
+ .projectFactsWrap .item:hover i, .projectFactsWrap .item:hover p{
+   color: white;
+ }
+ .projectFactsWrap .item:hover span{
+   background: white;
+ }
+ .experience-wave {
+    margin-bottom: 3em;
+ }
+ @media (max-width: 786px){
+   .projectFactsWrap .item {
+      flex: 0 0 50%;
+   }
+ }
+ 
+/* Testimonials
+-------------------------------------------------------*/
+.testimonials {
+   width: 100vw;
+   background-image: url(../img/testimonials-bg\ 1.png);
+   background-size: cover;
+   background-repeat: no-repeat;
+   height: 100vh;
+   padding: 2em;
+   max-width: 100%;
+}
+
+.testimonials h5 {
+   color: var(--regular_blue);
+}
+.testimonials i {
+   color: var(--secundary_darken);
+}
+
+.testimonials-title {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   color: var(--secundary_darken);
+   padding-top: 5em;
+}
+.testimonials-title .fas {
+   font-size: 2em;
+}
+
+
+/* Slideshow container */
+.slideshow-container {
+  position: relative;
+}
+
+/* Slides */
+.mySlides {
+  display: none;
+  padding: 80px;
+  text-align: center;
+}
+.mySlides q {
+   font-size: 1.5em;
+   color: var(--secundary_darken);
+}
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -30px;
+  padding: 16px;
+  color: #888;
+  font-weight: bold;
+  font-size: 30px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  position: absolute;
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(16, 116, 146, 0.8);
+  color: white;
+}
+
+/* The dot/bullet/indicator container */
+.dot-container {
+    text-align: center;
+    padding: 20px;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+/* Add a background color to the active dot/circle */
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Add an italic font style to all quotes */
+q {font-style: italic;}
+
+/* Add a blue color to the author */
+.author {color: cornflowerblue;}
+
+
+
+
+/* Our Team
+-------------------------------------------------------*/
+.our-team {
+  width: 80vw;
+  margin: 0 auto;
+  margin-bottom: 10em;
+}
+.our-team p {
+   color: rgba(0,0,0,0.5);
+}
+.our-team .card-img1,
+.our-team .card-img2,
+.our-team .card-img3,
+.our-team .card-img4 {
+   height: 25em;
+   display: flex;
+   align-items: flex-end;
+   justify-content: center;
+   overflow: hidden;
+   background-size: cover;
+}
+.card-img1 .card-caption,
+.card-img2 .card-caption,
+.card-img3 .card-caption,
+.card-img4 .card-caption {
+   background-color: rgba(255, 255, 255, 0.7);
+   width: 100%;  
+}
+.card-img .card-caption h6,
+.card-img .card-caption p {
+   z-index: 1;
+}
+.card .card-img2 {
+  background-image: url();
+}
+.card .card-img2 {
+   background-image: url();
+ }
+ .card .card-img2 {
+   background-image: url();
+ }
+ .card .card-img2 {
+   background-image: url();
+ }
+
+
+/*----- Footer section -------*/
+ 
+.footer {
+   padding: 5em;
+   display: grid;
+   grid-template-columns: repeat(10,1fr);
+   gap: 4em;
+   background-color: var( --darken_blue);
+}
+.footer-info {
+   grid-column: 1/5;
+}
+.footer-info p {
+   margin-top: -50px;
+}
+.footer-contact {
+   grid-column: 5/9;
+}
+
+.get-in-touch {
+   grid-column: 9/12;
+}
+.footer .footer-logo {
+  width:250px;
+  height: 250px;
+  margin-top: -80px;
+  margin-left: -10px;
+}
+.footer p {
+   color: rgba(255,255,255,0.5);
+}
+.footer h5, h3, i,h4 {
+  color: var(--white)
+}
+.footer a {
+   text-decoration: none;
+}
+
+.footer .fab, .far {
+   height: 40px;
+   width: 40px;
+   text-align: center;
+   line-height: 38px;
+   font-size: 1.5em;
+   margin-right: .5em;
+   margin-top: .5em;
+ }
+ .footer-social-network .fa-instagram:hover {
+   background-color: #fff;
+   color: var(--green)
+ }
+ .footer-social-network .fa-facebook-f:hover{
+   background-color: #fff;
+   color: var(--green)
+ }
+ .footer-social-network .fa-twitter:hover {
+    background-color: #fff;
+    color: var(--green)
+ }
+ .footer .footer-contact-icons .fab {
+   font-size: 1.8em;
+ }
+.footer-social-network .fa-instagram {
+   background: #DD4B39;
+   border-radius: 50%;
+}
+.footer-social-network .fa-facebook-f {
+   background: #3B5998; 
+   border-radius: 50%;
+}
+.footer-social-network .fa-twitter{
+   background:  #55ACEE; 
+   border-radius: 50%;
+}
+.footer form .btn-info {
+   background-color: var(--regular_blue);
+   color: var(--white);
+   border:  none;
+   padding: 5px 30px;
+}
+.footer form .btn-info:hover {
+   background-color: var(--green);
+}
+.footer .get-in-touch {
+   width: 100%;
+   height: 100%;
+   color: rgba(255,255,255,0.5);
+}
+.footer .footer-contact-icons {
+  display: flex;
+  flex-direction: column;    
+}
+.copywrite {
+  background-color: var(--regular_blue);
+  height: 50px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 10px;
+}
+.copywrite .footer-enlace {
+  color: #002535;
+  text-decoration: none;
+}
+.copywrite .footer-enlace:hover {
+  color: var(--white);
+}
+.footer-links {
+   display: flex;
+}
+.footer-links li {
+  list-style: none;
+  margin-right: 20px;
+}
+.footer-links a:hover {
+  color: var(--white);
+}
+.footer-links a {
+  text-decoration: none;
+  color: #002535;
+}
+
+/* ==========================================================================
+      estilos pagina quienes somos 
+   ========================================================================== */
+
+   .quienes-somos-page {
+      height: 70vh;
+      width: 100vw;
+      background-image: url(../img/quienes-somosBG.jpg);
+      background-size: cover;
+      background-position: center;
+      display: grid;
+      grid-template-columns: repeat(10,1fr);
+      grid-template-rows: repeat(10,1fr);
+      align-items: center;
+   }
+
+   .main-quienes-somos {
+      grid-column: 6/10;
+      grid-row: 3/10;
+      color: #fff;
+   }
+
+  .main-video-title-quienes-somos {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+  }
+  .main-video-title-quienes-somos .fas,
+  .main-video-title-quienes-somos h3 {
+     color: var(--regular_blue);
+     font-size: 4em;
+  }
+
+  .main-quienes-somos span {
+     font-size: 1.3em;
+     text-transform: uppercase;
+  }
+  .main-quienes-somos h1 {
+     font-size: 4em;
+     color: #fff;
+     text-transform: uppercase;
+  }
+
+  
+     .main-quienes-somos .divider {
+        height: 8px;
+        width: 100px;
+        background-color: #e67e2e;
+     }
+  
+     .main-quienes-somos em {
+        font-size: 1.5em;
+     }
+
+
+
+   .quienes-somos-container {
+      background-color: #f4f1ec;
+      width: 100vw;
+      padding: 3.5em;
+   }
+
+   .quienes-somos-info {
+      width: 90%;
+      margin: 0 auto;
+      grid-template-columns: repeat(2,1fr);
+
+   }
+
+   .quienes-somos-info h2 {
+      font-size: 3em;
+   }
+
+  
+   .quienes-somos-info p,
+   .quienes-somos-info h2 {
+      color: var(--secundary_darken);
+   }
+
+   .quienes-somos-info p,
+   .quienes-somos-info2 p {
+      font-size: 1.2em;
+   }
+
+
+   .quienes-somos-container .quienes-somos-logo {
+      width: 100vw;
+      margin-top: -8em;
+      margin-bottom: 0em;
+      display: flex;
+      justify-content: center;
+   }
+
+   .quienes-somos-container .quienes-somos-info2 p {
+      color: var(--secundary_darken);
+   }
+   
+   .porque-nos-prefieren-tittle h2 {
+      color: var(--green);
+   }
+   
+   .porque-nos-prefieren {
+      background-color: #002535;
+      padding: 4em 2em;
+   }
+   .porque-nos-prefieren .row {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     text-align: center;
+   }
+ 
+   .porque-nos-prefieren .fas {
+      margin: 20px;
+      font-size: 3em;
+      color: #e67e2e;;
+   }
+   .porque-nos-prefieren .fas:hover {
+      color: #fff;
+   }
+   .porque-nos-prefieren-info {
+      color: #fff;
+      display: flex;
+      justify-content:  space-around;
+      text-align: center;
+   }
+   .quienes-somos-info2 .content-info-quienessomos-informacion {
+      padding: 2em;
+   }
+   .content-info-quienessomos-informacion {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+   }
+
+
+ 
+   .content-info-quienessomos-img {
+      background-image: url(../img/YATE1.jpg);
+      background-size: cover;
+      height: 400px;
+   }
+
+   .content-info-quienessomos-img2  {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+ 
+   }
+
+   .content-info-quienessomos-img2 .fas {
+      color: var(--regular_blue);
+      font-size: 5em;
+      animation: about-arrow infinite 1s linear;
+   }
+
+   @keyframes about-arrow {
+     from {
+        transform: translateY(0%);
+     }
+     to {
+        transform: translateY(100%);
+     }
+   }
+
+/* ==========================================================================
+      estilos pagina de servicios
+   ========================================================================== */
+
+   .service-page .jumbotron  {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 450px;
+   }
+   .service-page .jumbotron .fas {
+      font-size: 1.3em;
+   }
+
+   .service-page .jumbotron i:nth-child(1)  {
+      margin-top: 3em;
+   }
+
+.service-title-section h4 {
+  color: var(--regular_blue)
+}
+
+ .content-services-page {
+   width: 100vw;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+ } 
+
+   .content-services-page .content-info-services {
+      padding: 3em;
+      height: 500px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+   }
+   .contentInfo-services-img1,
+   .contentInfo-services-img2,
+   .contentInfo-services-img3 {
+      height: 500px;
+   }
+
+   .banner-services-title {
+      display: flex;
+      justify-content: center;
+      background-color: var(--green);
+      opacity: .8;
+   }
+
+   .contentInfo-services-img1 {
+     background-image: url(../img/yates1.jpg);
+     background-size: cover;
+   }
+   .contentInfo-services-img2 {
+      background-image: url(../img/tres-amigos-europeos-moda-sentados-barco-almorzando-bebiendo-champan-expresando-alegria-placer-cada-ano-reservan-entradas-paises-calidos-invierno_176420-15425.jpeg);
+      background-size: cover;
+    }
+    .contentInfo-services-img3 {
+      background-image: url(../img/transporte.jpg);
+      background-size: cover;
+    }
+   .services-ocaciones {
+      padding: 3em;
+   }
+
+   .services-ocaciones h2 {
+      font-size: 3em;
+      color: var(--green);
+   }
+
+   .services-transporte {
+      background-size: cover;
+      width: 100%;
+      height: 100%;
+
+   } 
+
+
+    .services-page-banner2 {
+       color: #fff;
+       display: flex;
+       flex-wrap: wrap;
+    }
+
+
+
+
+
+   .services-page-banner2 .banner2-img {
+     height: 600px;
+     background-image: url(../img/99.jpeg);
+     background-size: cover;
+     background-position: right;
+     padding: 2em;
+   }
+   .services-page-banner2 .banner2-img h3 {
+      color: var(--green);
+      width: 400px;
+      padding: 8px 20px;
+      text-align: center;
+   }
+.services-page-banner2
+.services-page-banner2-info {
+   background-color: var(--regular_blue);
+   padding: 1.5em;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+}
+
+.eventos {
+   display: flex;
+   justify-content: center;
+}
+.eventos p {
+   font-size: 1.5em;
+
+}
+
+
+.services-page-banner2
+.services-page-banner2-info p 
+.services-page-banner2
+.services-page-banner2-info p {
+  line-height: 30px;
+  font-size: 1.2em;
+}
+
+
+.content-services-page .article1 .banner-services-title,
+.content-services-page .article2 .banner-services-title,
+.content-services-page .article3 .banner-services-title {
+   opacity: 0;
+}
+
+.servicios-generales-info h3 {
+   font-weight: bolder;
+}
+   .servicios-generales {
+      background-color: #ececec;
+      height: 100vh;
+   }
+   .content-info-services  {
+      padding: 3em;
+   }
+   .content-info-services h3 {
+      font-size: 2.5em;
+      color: var(--green);
+      margin-bottom: .5em;
+   }
+   .content-info-services p {
+      line-height: 1.5em;
+      font-size: 1.2em; 
+   }
+
+   .services-ocaciones .card-body {
+      background: none;
+      color: var(--green)
+   }
+
+   .services-ocaciones .card-body .card-title {
+      color: var(--regular_blue)
+   }
+
+/* ==========================================================================
+      estilos pagina de FAQs
+   ========================================================================== */
+   .wrapper-FAQ {
+      width: 100vw;
+      background-image: url(../img/quienes-somosBG.jpg);
+      background-size: cover;
+      background-position: center;
+   }
+
+   .FAQ .divider-FAQ {
+      width: 100px;
+      height: 300;
+      color: black;
+      margin: 0 auto;
+   }
+   
+   .FAQ-titles-h2 {
+      padding-top: 10em;
+      grid-template-columns: repeat(10, 1fr);
+      text-align: center;
+   }
+   .FAQ-titles-h2 h2 {
+      font-size: 3em;
+      grid-template-columns: 6/10;
+      color: #fff;
+   } 
+   .FAQ-titles-h2 h5 {
+      font-size: 1.5em;
+      color: #fff;
+      font-weight: lighter;
+   }
+   .FAQ-titles-h2 .divider {
+      font-size: 1.5em;
+      width: 50px;
+      height: 10px;
+      background-color: #e67e2e;
+   }
+
+   .wrapper-FAQ  .FAQ {
+      display: grid;
+      grid-template-columns: repeat(10, 1fr);
+   }
+
+   .wrapper-FAQ .container {
+      width: 600px;
+      grid-column: 6/10;
+      margin-bottom: 5em;
+   }
+
+   .FAQ h5 {
+      font-weight: normal;
+      color: var(--green);
+   }
+
+   .header-FAQ-title {
+      padding: 2em;
+      height: 100%;
+      color: #fff;      
+      display: flex;
+      align-items: center;
+   }
+  
+
+   .jumbotron-header-FAQ {
+      background-image: url(../img/yates-2.jpg);
+      background-position: center;
+      background-size: cover;
+      height: 500px;
+
+   }
+   .header-FAQ-title h2 {
+      font-size: 3em;
+      grid-column: 2/5;
+      grid-row: 2/6;
+   }
+.faq-header-button {
+   grid-column: 6/10;
+   grid-row: 2/6;
+}
+
+   .faq-content {
+      border: 1px solid #f3f3f3;
+      margin-top: 1em;
+      padding: 2em;
+   }
+   .faq-content:hover {
+      background-color: #fff;
+      -webkit-box-shadow: 7px 5px 15px -5px rgba(59,137,173,0.87); 
+      box-shadow: 7px 5px 15px -5px rgba(59,137,173,0.3);
+   }
+   .faq-content h4 {
+      color: var(--green);
+   }
+   .faq-content h5 {
+      font-weight: bold;
+      font-size: 1.2em;
+   }
+   .faq-content p {
+      color: #686b7f;
+   }
+  
+
+
+
+/* ==========================================================================
+      estilos pagina nuestra flota
+   ========================================================================== */
+   .flota-banner {
+      background-image: linear-gradient(rgba(16, 16, 16, .7), rgba(16, 16, 16, .8)), url(../img/YATE1.jpg);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      height: 400px;
+      padding: 3em;
+      color: #fff;
+   }
+
+
+   .flota-banner .nuestraFlota-header {
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     height: 100%;
+     margin-left: 60px;
+    }
+   .flota-banner h3 {
+     font-weight: lighter;
+     margin-top: 1.5em;
+   }
+   .flota-banner h2 {
+      font-size: 3.5em;
+   }
+   .nuestra-flota h3 {
+     color: var(--regular_blue);
+   }
+   .filter-links {
+      display: flex;
+      justify-content: center;
+      margin-top: 4em;
+   }
+   .filter-links li {
+      list-style: none;
+      text-decoration: none;
+      padding: 1em;
+      margin-right: 10px;
+      color: #003851;
+      cursor: pointer;
+   }
+
+   .filter-links .active {
+      background-color: rgba(59,137,173,0.87);
+   }
+   .filter-links li:hover {
+      background-color: rgba(59,137,173,0.87);
+      color: #fff;
+   }
+
+
+   .nuestra-flota .nuestraFlota-container {
+      margin-top: 5em;
+   }
+   .nuestra-flota .row {
+      margin-bottom: 4em;
+   }
+
+   .gallery-item .show {
+      animation: fadeIn 0.5s ease;
+   }
+
+   @keyframes fadeIn {
+      0% {
+         opacity:  0;
+      }
+      100% {
+         opacity: 1;
+      }
+   }
+
+   .gallery-item.hide {
+      display: none;
+   }
+
+   .nuestra-flota .card-title {
+      background-color: var(--regular_blue);
+      border-radius: 30px;
+      padding: 3px;
+      text-transform: uppercase;
+      -webkit-box-shadow: 7px 5px 15px -5px rgba(59,137,173,0.87); 
+      box-shadow: 7px 5px 15px -5px rgba(59,137,173,0.87);
+   }
+   .nuestra-flota .card {
+      border: none;
+      -webkit-box-shadow: 7px 5px 15px -5px rgba(59,137,173,0.87); 
+      box-shadow: 7px 5px 15px -5px rgba(59,137,173,0.87);
+      margin: 0 auto;
+   }
+
+   .nuestra-flota .card img {
+      max-width: 100%;
+   }
+
+   .nuestra-flota .card:hover {
+      box-shadow: none;
+   }
+   .nuestra-flota .card-img-top {
+      height: 10em;
+   }
+    .card-body {
+      background-color: #0e3851;
+      color: #fff;
+   }
+   .nuestra-flota .card-body a {
+      color: #fff;
+      text-decoration: none;
+      background-color: var(--regular_blue);
+      border-radius: 30px;
+      text-transform: uppercase;
+      padding: 5px 30px;
+      position: absolute;
+      -webkit-box-shadow: 7px 5px 15px -5px rgba(59,137,173,0.87); 
+      box-shadow: 7px 5px 15px -5px rgba(59,137,173,0.87);
+      margin-left: 35px;
+   }
+
+/* BOTES plantilla estilos generales */
+.nuestra-flota_wrapper {
+margin-top: 10em
+} 
+.nuestra-flota-title {
+   font-size: 3em;
+   color: var(--green);
+   text-align: center;
+}
+
+.yates-especificaciones-generales .img-boat {
+   height: 600px;
+   background-size: cover;
+   display: flex;
+   align-items: flex-end;
+   background-position: center;
+}
+
+
+/* YATES plantilla para imagenes  */
+.yates-especificaciones-generales .img-boat-boston {      
+   background-image: url(../img/nuestra-flota/botes/boston-whaler32/front.jpg);
+}
+.yates-especificaciones-generales .img-boat-benetti {      
+   background-image: url(../img/nuestra-flota/super-yates/BENETTI/bg.jpeg);
+}
+.yates-especificaciones-generales .img-lagoon-420 {      
+   background-image: url(../img/nuestra-flota/catamaranes/Lagoon-42/bg.jpeg);
+   background-position: left;
+}
+.yates-especificaciones-generales .img-lagoon-440 {      
+   background-image: url(../img/nuestra-flota/catamaranes/Lagoon-440/bg.jpeg);
+   background-position: left;
+}
+.yates-especificaciones-generales .img-boat-iconFly56 {
+background-image: url(../img/nuestra-flota/yates/Aicon-Fly-56/aiconFly.JPG);
+}
+.yates-especificaciones-generales .img-botes-azimut52 {      
+   background-image: url(../img/nuestra-flota/yates/Azimut-52/bg.jpeg);
+}
+.yates-especificaciones-generales .img-botes-azimut55 {      
+   background-image: url(../img/nuestra-flota/yates/Azimut-55/bg2.jpeg);
+}
+.yates-especificaciones-generales .img-boat-cranchi50 {
+   background-image: url(../img/nuestra-flota/yates/Cranchi-50/bg.jpeg);
+}
+.yates-especificaciones-generales .img-boat-fairline50 {
+   background-image: url(../img/nuestra-flota/yates/Fairline-50/bg.jpeg);
+}
+.yates-especificaciones-generales .img-boat-majesty56 {
+   background-image: url(../img/nuestra-flota/yates/Majesty-56/bg.jpeg);
+}
+.yates-especificaciones-generales .img-yacht-meridian42{
+   background-image: url(../img/nuestra-flota/yates/Meridian-42/Yate-5.png);
+}
+.yates-especificaciones-generales .img-yacht-tiara38{
+   background-image: url(../img/nuestra-flota/yates/Tiara-38/bg1.jpeg);
+}
+.yates-especificaciones-generales .img-yacht-tiara40{
+   background-image: url(../img/nuestra-flota/yates/Tiara-40/bg.jpeg);
+}
+.yates-especificaciones-generales .img-yacht-tiara44{
+   background-image: url(../img/nuestra-flota/yates/Tiara-44-Express/bg.jpeg);
+}
+.yates-especificaciones-generales .img-yacht-searay-44{
+   background-image: url(../img/nuestra-flota/yates/Sea-Ray-44/Nuevaimagen1.JPG);
+}
+.yates-especificaciones-generales .img-yacht-sunseeker48{
+   background-image: url(../img/nuestra-flota/yates/Sunseeker-48/bg.jpeg);
+}
+.yates-especificaciones-generales .img-yacht-searay56 {
+   background-image: url(../img/nuestra-flota/yates/SeaRay-56-Sedan-Bridge/Nuevaimagen1.JPG);
+}
+.yates-especificaciones-generales .img-yacht-rivieraSport {
+   background-image: url(../img/nuestra-flota/yates/Riviera-38/BG.jpeg);
+}
+.yates-especificaciones-generales .img-yacht-cruiser30express {
+   background-image: url(../img/nuestra-flota/yates/Cruisers-Yachts-38/Nueva\ imagen1.JPG);
+}
+.yates-especificaciones-generales .img-boat-evanglases-350 {
+   background-image: url(../img/nuestra-flota/botes/Everglades-35/front.jpeg);
+}
+.yates-especificaciones-generales .img-boat-Willcraft-Scarab {
+   background-image: url(../img/nuestra-flota/botes/Wellcraft-Scarab-33/bg.jpeg);
+   background-position: center;
+}
+.yates-especificaciones-generales .img-boat-tiara43-sovran {
+   background-image: url(../img/nuestra-flota/yates/Tiara-43-Sovran/bg.jpeg);
+}
+
+
+
+.yates-especificaciones-generales .flotas-icono-especificaciones {
+   margin-left: 200px;
+   width: 100px;
+   height: 100px;
+   margin-bottom: 20px;
+}
+
+.yate-titulo {
+   text-decoration: none;
+}
+.yate-titulo h3 {
+   border: 2px solid #fff;
+   width: 300px;
+   text-align: center;
+   padding: 10px;
+   background-color: #154563;
+}
+.nuestraFlota-especificaciones-strong {
+   padding: 2em;
+}
+ .nuestraFlota-especificaciones-strong li {
+   font-size: 1.3em;
+   border-bottom: 1px solid rgba(12,71,82,.2);
+   margin-bottom: .3em;
+   display: flex;
+   justify-content: space-between;
+ }
+
+ .nuestra-flotaIcon-section {
+    background-attachment: fixed;
+    padding: 1em;
+ }
+ .nuestra-flotaIcon-section .nuestra-flotah3 {
+   font-weight: bolder;
+   text-align: center;
+   padding-top: 1em;
+   color: var(--green);
+ }
+.nuestra-flotaIcon-section .icon-content .col-lg-3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.nuestra-flotaIcon-section h3 {
+  color: var(--darken_blue);
+  font-weight: lighter;
+}
+.nuestra-flotaIcon-section .fas {
+   color: var(--regular_blue);
+   font-size: 2em;
+   margin-bottom: .2em;
+}
+
+.nuestra-flotaIcon-section-icons {
+   width: 3.5em;
+}
+
+ .nuestra-flotaIcon-section .row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1em;
+ }
+ .especificaciones-info {
+    padding: 2em;
+ }
+
+ .que-llevar {
+   background-color: var(--regular_blue);
+   height: 300px;
+
+ }
+
+ .que-llevar-items {
+    display: flex;
+    justify-content: space-around;
+ 
+ }
+
+ .que-llevar h3, 
+ .que-llevar h4 {
+    color: #fff;
+    font-size: 2em;
+    font-weight: 300;
+ }
+
+ .que-llevar h3 {
+   padding-top: 1em;
+   font-size: 3em;
+   font-weight: bold;
+}
+
+
+
+  .nuestraFLota-gallery {
+   display: grid;
+   grid-template-columns: repeat(5, 1fr);
+ }
+ .nuestra-flota-bostonWhaler32 
+ .nuestraFLota-gallery 
+ a:first-child {
+   grid-row: 1/3;
+   grid-column: 1/3;
+   height: 550px;
+ }
+ 
+ .nuestra-flota-bostonWhaler32 .nuestraFLota-gallery img {
+    height: 250px;
+ }
+
+ .nuestra-flota-bostonWhaler32 .nuestraFLota-gallery a:nth-child(2) {
+   grid-column: 3/5;
+   height: 300px;
+ }
+
+ .nuestra-flota-bostonWhaler32 .nuestraFLota-gallery a:nth-child(4),
+ .nuestra-flota-bostonWhaler32 .nuestraFLota-gallery a:nth-child(5),
+ .nuestra-flota-bostonWhaler32 .nuestraFLota-gallery a:nth-child(6) {
+   height: 250px;
+ }
+
+ .nuestra-flota-bostonWhaler32 .nuestraFLota-gallery img,
+ .gallery a {
+   width: 100%;
+   height: 100%;
+ }
+ 
+
+.nuestraFlota-especificaciones-h3 {
+  color: var(--regular_blue);
+}
+
+.nuestraFlota-especificaciones-strong {
+   color: #144562;
+}
+.nuestraFlota-especificaciones-li {
+   margin-right: 30px;
+}
+
+
+/* ==========================================================================
+      estilos pagina destinos
+   ========================================================================== */
+.pagina-destinos_wrapper h1 {
+   margin-top: 4em;
+   text-transform: uppercase;
+}
+.pagina-destinos_wrapper h4 {
+   color: var(--regular_blue);
+   font-weight: normal;
+}
+
+.destinos-content .contenedor-palmilla,
+.destinos-content .contenedor-puntacana,
+.destinos-content .contenedor-catalina,
+.destinos-content .contenedor-saona {
+   display: grid;
+   grid-template-columns: repeat(2,1fr);
+}
+
+.destinos-content .palmilla-img img,
+.destinos-content .catalina-img img,
+.destinos-content .puntacana-img img,
+.destinos-content .saona-img img{
+   height: 400px;
+   width: 100%;
+   background-image: url(../img/destinos/playa\ palmilla\ 2.jpg);
+   background-size: cover;
+}
+
+.destinos-content .palmilla-info,
+.destinos-content .puntacana-info,
+.destinos-content .catalina-info,
+.destinos-content .saona-info  {
+   padding: 3em;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+}
+.destinos-content .palmilla-info h3,
+.destinos-content .puntacana-info h3,
+.destinos-content .catalina-info h3,
+.destinos-content .saona-info h3  {
+   color: #003851;
+   text-transform:uppercase
+}
+
+.destinos-reserva-tu-yate {
+   padding: 6em;
+   display: flex;
+   justify-content: center;
+}
+
+.destinos-reserva-tu-yate .button {
+   text-transform: uppercase;
+   width: 300px;
+   padding: 10px;
+   font-size: 1.5em;
+}
+
+.destinos-banner {
+   background-image: url(../img/destinos/Drone\ 08.jpg);
+   background-size: cover;
+   background-position: center;
+   height: 400px;
+   width: 100vw;
+   display: flex;
+   flex-direction: column;
+   color: #fff;
+   padding: 2em;
+   justify-content: center;
+}
+
+.destinos-banner h2 {
+   font-size: 3em;
+   font-weight: lighter;
+
+}
+.destinos-banner span {
+   font-weight: bold;
+   margin: 10px;
+}
+
+.destinos-banner .eligeTudestino-2 {
+   margin-left: 10em;
+ }
+
+ .destinos-banner .eligeTudestino-3 {
+   margin-left: 20em;
+ }
+
+/* ==========================================================================
+      estilos pagina de contacto 
+   ========================================================================== */
+
+
+.home-contact-area {
+   width: 100vw;
+   height: 100vh;
+   background-image: url(../img/Drone02.jpg);
+   background-size: cover;
+   background-position: left;
+}
+
+
+
+.thm-container {
+   width: 100vw;
+   margin-top: 5em;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.contact-form-content {
+   background: #F5F6FA;
+   padding: 50px 0;
+   padding-left: 80px;
+   padding-right: 80px;
+   margin-top: 3em;
+}
+
+
+
+.thm-container .title span {
+   font-family: 'Rubik', sans-serif;
+   font-size: 20px;
+   color: var(--regular_blue);
+}
+
+.thm-container .title h2 {
+   color: var(--green);
+   font-size: 40px;
+   line-height: 60px;
+   font-weight: bold;
+}
+
+.contact-form input, 
+.contact-form textarea {
+   border: none;
+   outline: none;
+   width: 100%;
+   height: 60px;
+   border-radius: 20px;
+   background: #fff;
+   color: #fff;
+   font-size: 16px;
+   padding-left: 50px;
+   margin-bottom: 20px;
+   display: block;
+}
+
+.contact-form textarea {
+   height: 130px;
+   padding-top: 20px;
+}
+
+.thm-btn {
+   border: none;
+   outline: none;
+   display: inline-block;
+   vertical-align: middle;
+   background: var(--regular_blue);
+   color: #fff;
+   border-radius: 35px;
+   font-weight: 500;
+   padding: 10px 50px;
+   text-transform: uppercase;
+}
+
+.contact-info {
+   margin-left: -25px;
+   border: 2px solid #EBEDF4;
+   padding-top: 75px;
+   padding-bottom: 80px;
+   background-color: rgba(12,71,82,.7);
+   margin-top: 5.5em;
+}
+
+.single-contact-info h3 {
+   color: var(--regular_blue);
+   font-size: 18px;
+   font-weight: bold;
+   margin-bottom: 10px;
+}
+.single-contact-info p {
+   color: #fff;
+   font-size: 1.2em;
+}
+
+
+.contact-form textarea,
+.contact-form input {
+   color: var(--green);
+}
+
+
+.contact-form-area {
+   background-color: #ececec;
+   height: 100vh;
+}
+
+.contact-form-area .logo {
+   width: 300px;
+   height: 300px;
+}
+
+.contact_form {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.contact_form h2 {
+  font-size: 3em;
+  color:  #021c47;
+
+}
+.contact_form .col-lg-6:nth-child(1) {
+   height: 660px;
+   background-image: url(../img/preguntas.jpg);
+   background-size: cover;
+}
+.contact_form .contact-form-content {
+  width: 40%;
+}
+.contact-button-action {
+   margin-top: 4em;
+}
+
+.contact-button-action button {
+   height: 4em;
+   width: 12em;
+   border-radius: 50px;
+   text-transform: uppercase;
+   background-color: #021c47;
+   color: #fff;
+   border: none;
+   text-align: center;
+   margin-top: -2.5em
+}
+
+
+
+/* ==========================================================================
+      politicas de covid
+   ========================================================================== */
+
+   .codiv-banner {
+      margin-top: 3em;
+      height: 400px;
+      width: 100vw;
+      background-image: url(../img/Drone\ 19.jpg);
+      background-position: center;
+      background-size: cover;
+      margin-bottom: 5em;
+   }
+
+/* ==========================================================================
+    404 page not found
+   ========================================================================== */
+
+  .wrapper-404 {
+     width: 100vw;
+     height: 100vh;
+     background-image: url(../img/Lost-at-Sea.jpeg);
+     background-size: cover;
+     background-position: center;
+     
+  }
+
+  .wrapper-404 .frase-404 h2 {
+     font-size: 4em;
+     color: var(--regular_blue)
+  }
+
+  .wrapper-404 .frase-404 {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-direction: column;
+     height: 50vh;
+  }
+  .wrapper-404 .frase-404 h4 {
+   color: var(--green)
+}
+  .wrapper-404 .info-404 {
+     width: 100%;
+     display: grid;
+     grid-template-columns: repeat(12,1fr);
+     grid-template-rows: repeat(8, 1fr);
+  }
+
+  .wrapper-404 .info-404 .contenedor-info-404 {
+     grid-column: 2 / 6;
+     grid-row: 2 /8;
+  }  
+
+  .contenedor-info-404 span {
+     font-size: 1.3em;
+     color: #21646D
+  }
+  .contenedor-info-404 h1 {
+     color: #bfd2d9;
+     font-weight: bold;
+     font-size: 3em;
+  }
+  .contenedor-info-404 .divider {
+     background-color: var(--green);
+     height: 5px;
+     width: 70px;
+  }
+
+  .contenedor-info-404 em {
+     color: #bfd2d9;
+     font-size: 1.3em;
+  }
+ 
+
+/* ==========================================================================
+     MEDIA QUERIES
+   ========================================================================== */
+
+
+
+@media screen and (min-width:1189px) and (max-width: 1285px) {
+   .menu a {
+      padding: 1em 0.5em;
+      font-size: 1em;
+   }
+   .content-info .titles h2 {
+      font-size: 5em;
+   }
+   .wrapper .main-carousel {
+      margin-top: 11em;
+   }
+
+   .mas-exclusivo .col-lg-5 {
+      margin-top: -3em;
+   }
+   .mas-exclusivo .col-lg-5 h4 {
+      font-size: 3em;
+   }
+   .proceso-info h2 {
+      font-size: 3em;
+   }
+   .vive-la-experiencia-banner h2 {
+      font-size: 3em;
+   }
+   .main-quienes-somos h1 {
+      font-size: 3em;
+   }
+   .nuestraFlota-container .row {
+      display: flex;
+      flex-wrap: wrap;
+   }
+   .nuestraFlota-container .gallery-item {
+      margin: 1em;
+   }
+   .service-page .content-info-services .button {
+      margin-bottom: 2em;
+   }
+   .destinos-content .palmilla-img img,
+   .destinos-content .catalina-img img,
+   .destinos-content .puntacana-img img,
+   .destinos-content .saona-img img{
+      height: 450px;
+    }
+    .contact-form-area {
+      height: 80vh;
+   }
+   .contact-form-area button {
+      font-size: 1em;
+
+   }
+   .contact-form-area .col-lg-6:nth-child(1) { 
+      height: 550px;
+   }
+   .contact-form-area h2 {
+      font-size: 2.5em;
+      margin-top: 2em;
+   }
+
+   .contact-form-area h2 {
+      font-size: 2.5em;
+      
+   }
+   .contentInfo-services-img3 {
+     margin-top: .6em
+   }
+}
+
+@media screen and (min-width:1186px) and (max-width: 1188px) {
+  .navbar {
+     padding: .5em;
+  }
+  .menu li a {
+   margin-right: 10px;
+}
+
+.content-info .titles h2 {
+   font-size: 4.5em;
+}
+.wrapper .main-carousel {
+   margin-top: 12em;
+}
+
+
+
+  .contentInfo-services-img1 {
+    height: 500px;
+  }
+  .contentInfo-services-img3 {
+    margin-top: 2.4em;
+ }
+
+ .article3 .content-info-services {
+   margin-top: 3em;
+}
+.quienes-somos-page h1 {
+   font-size: 2.5em;
+}
+  
+}
+
+@media screen and (max-width: 1185px) {
+   .navbar {
+      padding: .5em;
+   }
+
+   .menu {
+      margin-top: 1em;
+   }
+
+   .menu li a {
+      margin-right: 5px;
+   }
+   .content-info .titles h2 {
+    font-size: 4.5em;
+    }
+
+  
+
+
+    .wrapper .swiper-container {
+      margin-top: 4em;
+   }
+
+   .wrapper .swiper-container img {
+     height: 150px;
+   }
+ 
+     
+     .swiper-slide img {
+       width: 100%;
+       height: 70%;
+     }
+
+
+     .mas-exclusivo h4 {
+        font-size: 2em;
+       
+     }
+     .mas-exclusivo h3 {
+      font-size: 3em;
+      margin-top: -.3em;
+   }
+      .mas-exclusivo p {
+         font-size: 1.1em;
+         color: #fff;
+      }
+   .destinos-reserva-tu-yate {
+      padding: 4em;
+   }
+
+   .services-ocaciones h2 {
+      font-size: 2.5em;
+   }
+ 
+   .proceso h2 {
+      font-size: 2.5em;
+   }
+ 
+   .proceso p {
+      font-size: 1.2em;
+   }
+   .services-diversion, 
+   .services-celebraciones {
+      height: 450px;
+   }
+ .services-diversion h3, 
+ .services-celebraciones h3 {
+    font-size: 2.5em;
+ }
+
+    .vive-la-experiencia-banner h2 {
+      font-size: 2.5em;
+     }
+
+     .contact-form-area .col-lg-6:nth-child(1) { 
+      height: 500px;
+   }
+   .contact-form-area h2 {
+      margin-top: 2em;
+   }
+
+   .footer {
+      padding: 2em;
+      grid-template-columns: 1fr;
+   }
+
+
+   /* quienes somos */
+
+   .quienes-somos-page h1 {
+      font-size: 3em;
+   }
+   /* servicios */
+
+
+   .article2   .contentInfo-services-img2 {
+      margin-top: 1.7em;
+   }
+
+   .contentInfo-services-img3 {
+      margin-top: 2.5em;
+   }
+
+   .article3 .content-info-services {
+      margin-top: 2em;
+   }
+
+}
+
+@media screen and (max-width:1150px) {
+   .wrapper .swiper-container {
+      margin-top: 0em;
+   }
+} 
+
+ @media screen and  (min-width:1001px) and (max-width: 1024px) {
+   .menu a {
+      margin-right: 10px;
+    }
+
+    .wrapper .swiper-container {
+       margin-top: 0em;
+    }
+
+    .wrapper .swiper-container img {
+      height: 150px;
+    }
+  
+  
+    /* services page */
+
+ 
+    .content-services-page .contentInfo-services-img2 {
+       margin-top: -.1em;
+     }
+ 
+    /* nuestra flota */
+
+    .nuestraFlota-container .col-lg-3 {
+      margin: 5px;
+    }
+
+ }
+
+
+ @media screen and (max-width: 1000px) {
+  
+   .navbar-content {
+      padding: 0em 1em;
+   }
+   .navbar .logo {
+      margin-left: 0em;
+   }
+   .navbar .menu-logo-mobile {
+      display: block;
+      width: 170px;
+      height: 150px;
+      margin-right: 30px;
+   }
+   .navbar .menu {
+      display: flex;
+      flex-direction: column;
+      position: absolute;
+      background-color: #fff;
+      height: 100vh;
+      left: -1em;
+      top: -16px;
+      transform: translateX(-100%);
+      transition: all .6s;
+    }
+    .navbar .menu a {
+      color: var(--green);
+   }
+    .menu a:hover {
+      transition: all .6s;
+      color: aliceblue;
+      padding: 1em 1em;
+   }
+    .navbar .menu-toggle {
+      transform: translateX(0%);
+    }
+    .menu li {
+      margin-top: 2em;
+      border-bottom: 1px solid rgba(12,71,82,.1);
+      padding: 5px;
+    }
+    .menu li:hover {
+      border-bottom: none;
+      transition: ease-in-out .8s;
+
+    }
+
+    .menu .btn-info {
+       background: none;
+       border: none;
+    }
+
+   .menu .dropdown-desktop {
+      display: none;
+   }
+
+    .menu .dropdown-mobile {
+      display: block;
+      margin-top: 2.5em;
+    }
+
+    .menu .dropdown-mobile .dropdown-item {
+      margin-top: -2em;
+    }
+
+    .menu .dropdown-mobile .btn-info {
+      color: var(--green);
+    }
+
+
+    .navbar .menu-bar {
+      display: block;
+      font-size: 2em;
+      color: #fff;
+      cursor: pointer;
+    } 
+
+    .navbar .btn-group {
+       margin-top: 2.5em;
+    }
+
+    
+
+  /* Content-info mobile */
+
+.content-info .titles {
+  grid-column: 2/8;
+  grid-row: 3/5;
+}
+
+.content-info .titles span {
+   font-size: 1.6em;
+}
+.content-info .titles h2 {
+   font-size: 3.5em;
+}
+.content-info .paragraph-info {
+  display: none;
+}
+
+.wrapper .swiper-container  {
+
+  margin-top: 6em;
+
+}
+
+.wrapper .home-carousel-content {
+   width: 75%;
+   height: 100%;
+}
+
+.main-carousel .swiper-slide a {
+   width: 200px;
+   height: 200px;
+   margin: 10px;
+}
+
+
+  /* Welcome mobile */
+ 
+  .main {
+    padding: 1em;
+    margin-top: -2.5em;
+  }
+
+.main h1 {
+  font-size: 3em;
+}
+.main .divider {
+   margin-bottom: 2em;
+}
+
+.quienes-somos .quienes-somos-title h2 {
+   font-size: 2em;
+}
+.main-info {
+   padding: 2em;
+}
+
+.main-info p {
+   line-height: 30px;
+}
+.main .main-video {
+   max-width: 100%;
+}
+.main .container-fluid {
+   display: flex;
+   flex-direction: column;
+}
+
+  /* Servicios mobile */
+  .services {
+    padding: 2em;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .services .service-title {
+     margin-top: -2em;
+  }
+
+
+  .services-section .service-img1,
+  .services-section .service-img2,
+  .services-section .service-img3 {
+     width: 80%;
+     margin: 0 auto;
+     margin-bottom: 1em;
+  }
+
+  /* Mas exclusivo mobile */
+.mas-exclusivo  {
+   background-position: center;
+   padding: 2em;
+   margin-top: 1em;
+   height: 350px;
+}
+.mas-exclusivo h3 {
+   color: var(--regular_blue);
+   font-size: 2.5em;
+   margin-top: -.2em;
+}
+.mas-exclusivo .col-lg-5 h4 {
+   font-size: 2em;
+   padding-top: 2em;
+}
+.mas-exclusivo p,
+.mas-exclusivo .divider {
+   display: none;
+}
+.mas-exclusivo button {
+   margin-top: .5em;
+   width: 170px;
+   font-size: 1em;
+} 
+
+.yates-recomendados h2 {
+   font-size: 2em;
+}
+
+.yates-recomendados .container {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+  /* service-fiestas mobile */
+
+  .services-fiestas {
+     margin-top: -3em;
+     padding: 1em;
+  }
+
+.services-fiestas h2 {
+     padding: 1em;
+     font-size: 2.5em;
+  }
+  .services-diversion, 
+  .services-celebraciones {
+     margin-top: 1em;
+     margin-bottom: 1em;
+     height: 400px;
+  }
+.services-diversion h3, 
+.services-celebraciones h3,
+.index-gallery .gallery__title {
+   font-size: 2.5em;
+} 
+
+  /* Galeria mobile */
+  .index-gallery, 
+  .index-gallery .gallery__title {
+   padding: 1em;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+  }
+
+
+  .index-gallery .row {
+     width: 90%;
+     margin: 0 auto;
+  }
+
+  .index-gallery  .foto5 {
+    margin-top: 12.6em;
+  }
+
+ 
+ 
+
+  /* banner vive la experiencia Mobile */ 
+  
+  .vive-la-experiencia-banner  {
+   height: 400px;
+  }
+  .vive-la-experiencia-banner h2 {
+   font-size: 2em;
+   text-align: center;
+  }
+
+  /* Proceso mobile */
+
+.proceso {
+   grid-template-columns: repeat(2,1fr);
+   justify-content: center;
+}
+.proceso-info {
+   padding: 1em;
+}
+.proceso h2 {
+   font-size: 2.5em;
+}
+.proceso-info {
+   grid-column: 2/10;
+}
+.proceso p {
+   font-size: 1.5em;
+   font-weight: lighter;
+   margin-top: 1em;
+}
+
+   /* Experience mobile */
+   .experience {
+     height: 550px;
+   }
+   .experience-svg {
+      display: none;
+   }
+   .experience .row {
+      margin-top: 2em;
+
+   }
+   .experience .fullWidth {
+     margin-top: -5em;
+   }
+   .experience .numbers {
+      font-size: 2em;
+   }
+   .experience h2 {
+    margin-top: -1em;
+    margin-bottom: 1.5em; 
+      
+   }
+
+   /* contact-form area index */
+
+   .contact-form-area .col-sm-12:nth-child(1) {
+      width: 500px;
+      margin-left: -1em;
+   }
+
+   /* testimonials mobile */
+   .testimonials {
+      background-position: right;
+      height: 600px
+    }
+
+    .testimonials .testimonials-title {
+      margin-top: 3em; 
+    }
+  
+   .testimonials .slideshow-container {
+      margin-top: -4em; 
+   }
+   .testimonials .slideshow-container q {
+      font-weight: lighter;
+   }
+
+   .contact-form-area .contact-button-action{
+      margin-top: -1px;
+   }
+   .contact-form-area .contact-button-action button {
+      width: 200px;
+      font-size: 1.3em;
+   }
+   .our-team {
+      width: 80%;
+      margin: 0 auto;
+      margin-bottom: 3em;
+   }
+   .our-team .col-lg-3 {
+      margin-top: 1em;
+   }
+
+    /* Footer mobile */ 
+
+   .footer {
+        margin: 0 auto;
+     }
+   .footer .footer-info,
+   .footer .footer-contact,
+   .footer .get-in-touch {
+     grid-column: 1/8;
+   }
+   .footer-links {
+      display: none;
+   }
+
+    /* Quienes somos  */
+
+    .main-quienes-somos {
+      grid-column: 5/10;
+      grid-row: 3/10;
+      color: #fff;
+   }
+
+   .main-quienes-somos span {
+      font-weight: lighter;
+   }
+
+   .main-quienes-somos h1 {
+      font-size: 2em;
+   }
+
+
+   .main-quienes-somos em {
+      grid-row: 3/5;
+      font-weight: lighter;
+   }   
+
+   .quienes-somos-container {
+      padding: 2em;
+   }
+
+   .quienes-somos-logo img {
+      width: 400px;
+      margin-left: 10px;
+   }
+
+   /* Service page  */
+
+ .service-page .jumbotron  {
+    height: 350px;
+ }
+   .service-page h2 {
+      font-size: 2.5em;
+   }
+   .flota-banner h2 {
+      margin-top: 2em;
+   }
+
+   .content-services-page .contentInfo-services-img1,
+   .content-services-page .contentInfo-services-img2, 
+   .content-services-page .contentInfo-services-img3 {
+      height: 500px;
+      background-position: center;
+   }
+
+   .content-services-page .article1,
+   .content-services-page .article3 {
+      display: flex;
+   }
+
+   .content-services-page .content-info-services,
+   .content-services-page .contentInfo-services-img3 {
+      margin-top: 4em;
+   }
+
+   .content-services-page .article1 h3,
+   .content-services-page .article2 h3,
+   .content-services-page .article3 h3 {
+      font-size: 1.7em;
+   }
+   .content-services-page .article1 h3,
+   .content-services-page .article2 h3,
+   .content-services-page .article3 h3 {
+      font-size: 1.7em;
+   }
+   .content-services-page .article1 p,
+   .content-services-page .article2 p,
+   .content-services-page .article3 p {
+      font-size: 1em;
+   }
+
+   .content-services-page .article1 .banner-services-title,
+   .content-services-page .article2 .banner-services-title,
+   .content-services-page .article3 .banner-services-title {
+      opacity: .8;
+      padding: 5px;
+   }
+
+ 
+   .services-ocaciones {
+      width: 100vw;
+      margin: 0 auto;
+   }
+
+
+   .services-ocaciones h2 {
+      margin-bottom: 1em;
+   }
+   
+
+   .services-ocaciones .card {
+      width: 90%;
+      margin: 0 auto;
+   }
+
+   .nuestra-flotaIcon-section h3 {
+      margin-bottom: 2em;
+   }
+
+   .services-page-banner2 .banner2-img {
+      background-position: center;
+   }
+    
+   /* Nuestra flota mobile  */
+    .jumbotron {
+      height: 70vh;
+      background-size: cover;
+      background-position: center;
+   }
+ 
+   .nuestra-flota-title h2 {
+      color: rgba(59,137,173);
+      font-size: 3em;
+   }
+   .nuestra-flota .filter-links {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+   }
+   .nuestra-flota .filter-links a {
+      padding: .7em .7em;
+   }
+   .nuestraFlota-container .card {
+      margin-top: 2.5em;
+   }
+   .yates-especificaciones-generales {
+      padding: 3em;
+      margin-bottom: 3em;
+   }
+   .flotas-icono-especificaciones {
+      margin: 1.5em;
+   }
+   .flotas-icono-especificaciones li {
+      font-size: 1.5em;
+      border-bottom: 5px solid #002535;
+   }
+   .nuestraFlota-especificaciones-strong li span {
+      margin-left: 50px;
+   } 
+
+    /* Nuestra flota mobile  */
+
+    .nuestraFlota-container .row {
+       padding: 5em;
+       margin-top: -5em;
+    }
+.contact_form .col-lg-6:nth-child(1) {
+      height: 500px;
+   }
+   .contact_form .col-lg-6:nth-child(2) {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+   }
+   .contact-form-area .contact-divider {
+      width: 100px;
+      height: 100px;
+      background-color: #002535;
+   }
+   .contact_form .col-lg-6:nth-child(2) h2 {
+      display: none;
+   }
+   .contact-button-action button {
+      height: 3em;
+      width: 10em;
+    
+   }
+
+
+   /* Nuestra flota plantilla de botes   */
+
+   .yates-especificaciones-generales {
+      width: 100vw;
+      display: flex;
+      flex-direction: column;
+   }
+
+   .yates-especificaciones-generales .img-boat  {
+      width: 100vw;
+   }
+
+  
+   .yates-especificaciones-generales .especificaciones-info {
+      width: 0vw; 
+      display: flex;
+      flex-direction: column;
+   }
+
+   .nuestraFlota-especificaciones-strong {
+    width: 70vw;
+    display: grid;
+    grid-template-columns: 1fr;
+   }
+
+
+   /* destinos */
+   .destinos-content {
+      padding: 1em;
+   }
+   .destinos-content .contenedor-palmilla,
+   .destinos-content .contenedor-catalina {
+     display: flex;
+     flex-direction: column;
+   }
+   .destinos-content .contenedor-puntacana,
+   .destinos-content .contenedor-saona {
+      display: flex;
+      flex-direction: column-reverse;
+   }
+   .destinos-content .contenedor-palmilla img,
+   .destinos-content .contenedor-puntacana img,
+   .destinos-content .contenedor-catalina img,
+   .destinos-content .contenedor-saona img {
+      height: 350px;
+    }
+    .destinos-content .contenedor-palmilla .palmilla-info,
+    .destinos-content .contenedor-puntacana .puntacana-info,
+    .destinos-content .contenedor-catalina .catalina-info,
+    .destinos-content .contenedor-saona .saona-info    {
+       padding: 3em 1em;
+    }
+    .destinos-banner-content {
+       margin-top: 4em;
+    }
+
+    .destinos-banner .eligeTudestino-1 h2,
+    .destinos-banner .eligeTudestino-2 h2,
+    .destinos-banner .eligeTudestino-3 h2 {
+      font-size: 2.2em;
+    }
+   .destinos-banner .eligeTudestino-2 {
+   margin-left: 2em;
+   }
+
+   .destinos-banner .eligeTudestino-3 {
+   margin-left: 5em;
+   }
+
+   /* conctact - page */
+
+   .contact-page .contact-form-content {
+     margin-top: -1em;
+   }
+
+   .contact-page .contact-info {
+      display: none;
+   }
+} 
+
+
+@media screen and (min-width:761px) and (max-width: 800px)  {
+   
+  
+  .wrapper .swiper-container {
+     margin-top: 5em;
+   }
+
+}
+
+
+@media screen and (min-width: 751px) and (max-width: 760px) {
+ 
+   .wrapper .swiper-container {
+      margin-top: -5em;
+    }
+   
+   .services .service-title {
+      margin-top: -4em;
+   }
+   .yates-recomendados {
+      margin-top: 4em;
+   }
+   .flota-banner h2 {
+      margin-top: 2em;
+    }
+
+    .testimonials {
+       height: 500px;
+    }
+    .testimonials-title {
+      margin-top: 2em;
+    }
+
+    .testimonials .testimonial-carousel {
+      margin-top: -6em;
+    }
+    .testimonial-carousel .mySlides q {
+      font-size: 1em;
+    }
+
+    .content-services-page .article1,
+    .content-services-page .article3 {
+       display: flex;
+       flex-direction: column-reverse;
+    }
+
+
+
+  .article1 .content-info-services p,
+   .article2 .content-info-services p,
+   .article3 .content-info-services p {
+      font-size: 1.2em;
+    }
+
+}
+
+
+@media screen and (max-width: 750px){
+
+ 
+   .wrapper .swiper-container {
+      margin-top: -4em;
+    }
+
+
+   .main h1 {
+      font-size: 1.9em;
+      font-weight: bold;
+   }
+     .main h2 {
+      font-weight: 300;
+    }
+    .services  {
+       padding: 3em;
+    }
+
+    .services-ocaciones h2 {
+       margin-top: -3em;
+    }
+
+    .services .services-title,
+    .services .services-fiestas h2,
+    .gallery__title {
+      font-size: 2.2em;
+    }
+
+    .services-page-banner2 .banner2-img {
+       background-position: center;
+    }
+
+
+   .services .services-diversion {
+      margin-bottom: 1em;
+   }
+
+
+
+    /*  services page  */
+
+    .content-services-page .contentInfo-services-img1,
+    .content-services-page .contentInfo-services-img2,
+    .content-services-page .contentInfo-services-img3 {
+      height: 350px;
+   }
+
+   .content-services-page .article1,
+   .content-services-page .article3 {
+      display: flex;
+      flex-direction: column-reverse;
+   }
+
+   .testimonials {
+      height: 600px;
+      width: 100vw;
+      /* background-color: #ececec; */
+   }
+ .testimonials-title {
+   margin-top: 2em;
+ }
+ .testimonials-title h5 {
+    font-size: 1.2em;
+ }
+ .testimonials-title h2 {
+   font-size: 1.2em;
+ }
+
+ .testimonials-title .fas {
+   font-size: 1.2em;
+ }
+
+
+ .testimonial-carousel .slideshow-container {
+    margin-top: -3em;
+ }
+
+ .testimonial-carousel .mySlides q {
+   font-size: 1.2em;
+ }
+
+
+   /* Nuestra flota plantilla de botes   */
+
+   .yates-especificaciones-generales {
+      width: 100vw;
+      display: flex;
+      flex-direction: column;
+   }
+
+   .yates-especificaciones-generales .img-boat  {
+      width: 100vw;
+      height: 400px;
+   }
+
+   .yates-especificaciones-generales .especificaciones-info {
+      width: 100vw; 
+      margin: 0 auto;
+   }
+
+  
+
+
+
+
+
+   .nuestraFLota-gallery {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+    }
+    .nuestra-flota-bostonWhaler32 
+    .nuestraFLota-gallery 
+    a:first-child {
+      grid-row: 1/4;
+      grid-column: 1/3;
+      height: 600px;
+    }
+  
+   
+    .nuestra-flota-bostonWhaler32 .nuestraFLota-gallery a:nth-child(2) {
+      grid-column: 3/5;
+    }
+   
+    .nuestra-flota-bostonWhaler32 .nuestraFLota-gallery a:nth-child(3),
+    .nuestra-flota-bostonWhaler32 .nuestraFLota-gallery a:nth-child(4),
+    .nuestra-flota-bostonWhaler32 .nuestraFLota-gallery a:nth-child(5),
+    .nuestra-flota-bostonWhaler32 .nuestraFLota-gallery a:nth-child(6) {
+      height: 250px;
+    }
+   
+    .nuestra-flota-bostonWhaler32 .nuestraFLota-gallery img,
+    .gallery a {
+      width: 100%;
+      height: 100%;
+    }
+    
+
+
+
+
+}
+
+@media screen and (min-width:601px) and (max-width: 700px) {
+
+   .wrapper .swiper-container {
+      margin-top: -4em;
+    }
+
+  .service-title {
+     margin: -6em;
+     margin-bottom: 3em;
+  }
+  .flota-banner h2 {
+    margin-top: 2em;
+  }
+   
+} 
+
+
+@media screen and (min-width:451px) and (max-width: 600px) {
+
+ 
+   .wrapper .swiper-container {
+      margin-top: -4em;
+    }
+
+   .main-info2 {
+      padding: .5em;
+      margin-top: 3em;
+   }
+
+   .yates-recomendados .card {
+      margin-left: -1em;
+   }
+
+
+.testimonials {
+   height: 600px;
+   width: 100vw;
+   background-image: none;
+   background-color: #ececec;
+}
+
+   .testimonials-title {
+      display: block;
+      display: flex;
+      flex-direction: column;
+   }
+
+
+   .testimonials-title {
+      margin-top: 2em;
+    }
+    .testimonials-title h5 {
+       font-size: 1.2em;
+    }
+    .testimonials-title h2 {
+      font-size: 1.2em;
+    }
+   
+    .testimonials-title .fas {
+      font-size: 1.2em;
+    }
+
+    .testimonial-carousel {
+       margin-top: -5em;
+    }
+   
+
+   .testimonials .mySlides q {
+      font-size: 1em;
+   }
+   .article1 button,
+   .article2 button,
+   .article3 button {
+      margin-bottom: 5em;
+   }
+   .content-services-page .article2 {
+      margin-top: 5em;
+   }
+   .content-services-page .article3 {
+      margin-top: 3em;
+   }
+
+   .destinos-banner-content {
+      margin-top: 12em;
+   }
+   .destinos-banner-content .eligeTudestino-1 h2,
+   .destinos-banner-content .eligeTudestino-2 h2,
+   .destinos-banner-content .eligeTudestino-3 h2 {
+      font-size: 1.8em;
+   }
+
+
+   .content-services-page h3 {
+      font-size: 2em;
+      margin-top: 5em;
+     }
+
+     .content-services-page .article1 a,
+     .content-services-page .article2 a,
+     .content-services-page .article3 a {
+        margin-bottom: 10em;
+     }
+
+     .content-info-services  h3 {
+        display: none;
+     }
+
+     .content-services-page  .contentInfo-services-img3 {
+      margin-top: 3em;
+     }
+
+     .services-ocaciones  h2 {
+        margin-top: -4em;
+        margin-bottom: 1em;
+
+     }
+
+
+     .service-page .flota-banner h2 {
+      font-size: 2em;
+      margin-top: 2em;
+   }
+
+     .services-ocaciones .card {
+        width: 350px;
+     }
+
+     .services-page-banner2 .banner2-img {
+        background-position: center;
+     }
+
+   .content-services-page .article1 .content-info-services,
+   .content-services-page .article2 .content-info-services,
+   .content-services-page .article3 .content-info-services {
+       margin-top: 5em;
+     }
+     .content-services-page .article2,
+     .content-services-page .article3 {
+      margin-top: -5em;
+    }
+
+     .services-page-banner2-info p,
+     .services-page-banner2-info h2 {
+        padding: .5em;
+     }
+
+   
+  
+ 
+   
+   }
+
+   @media screen and (min-width:350px) and (max-width: 450px) {
+      .wrapper .swiper-container {
+         margin-top: -12em;
+      }
+
+   .wrapper .home-carousel-content {
+      width: 80%;
+      height: 70%;
+   }
+
+   .main-carousel .swiper-slide a {
+      width: 100px;
+      height: 120px;
+      margin: 5px;
+   }
+
+   .swiper-slide img {
+      width: 100%;
+      height: 100%;
+    }
+   }
+
+ 
+
+@media screen and (min-width:200px) and (max-width: 350px) {
+
+      /*  index */
+
+
+   .content-info .titles h2 {
+       font-size: 2.5em;
+   }
+   .content-info .titles span {
+      font-size: 1.5em;
+   }
+
+  .wrapper .swiper-container {
+      margin-top: -11.5em;
+   }
+
+   .wrapper .home-carousel-content {
+      width: 75%;
+      height: 70%;
+   }
+
+   .main-carousel .swiper-slide a {
+      width: 100px;
+      height: 120px;
+      margin: 5px;
+   }
+
+   .swiper-slide img {
+      width: 100%;
+      height: 100%;
+    }
+
+    .main {
+       padding: 0em;
+    }
+
+    .main h2 {
+      font-size: 1.2em;
+    }
+    .main h1 {
+       font-size: 2em;
+    }
+
+    .main-info {
+      margin-top: -4em;
+    }
+
+    .main-info p {
+       font-size: .9em;
+       
+    }
+    .main-info a {
+       margin: 0 auto;
+    }
+
+    .main-info2 h1 {
+       margin-top: 2em;
+    }
+
+    .main-info2 {
+       padding: .6em;
+    }
+
+    .promo-video, .service-title  {
+      margin-top: -3em;
+    }
+    .services .services-title {
+       font-size: 2em;
+
+    }
+
+   .service-img1 {
+      width: 100vw;
+   }
+    .mas-exclusivo  {
+      padding: 1em;
+    }
+    .mas-exclusivo .col-sm-12 h4 {
+      margin-top: 1.5em;
+       font-size: 1.5em;
+    }
+    .mas-exclusivo .col-sm-12 h3 {
+      font-size: 2em;
+   }
+
+   .services .services-section .service-img1,
+   .services .services-section .service-img2,
+   .services .services-section .service-img3  {
+      width: 100vw;
+   }
+
+   .services-fiestas {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+   }
+
+
+
+   .services-fiestas  h2 {
+      font-size: 2em;
+   }
+   .services-diversion {
+      height: 250px;
+   }
+   .services-diversion h3,
+   .services-celebraciones h3 {
+      font-size: 1.8em;
+      padding: 0em 2em;
+   }
+   .services-celebraciones {
+      height: 250px;
+   }
+
+   .services-celebraciones p,
+   .services-diversion p {
+      font-size: 1em;
+      padding: 1.5em;
+   } 
+
+   .yates-recomendados {
+    margin: 0 auto;
+   }
+
+   .yates-recomendados h2 {
+      margin-top: 2em;
+   }
+
+   .yates-recomendados .container .card {
+      width: 300px;
+      margin-left: -2em;
+   } 
+    
+
+   .proceso-info {
+      padding: 0em;
+   }
+   .proceso h2 {
+      font-size: 2em;
+   }
+   .proceso-info {
+      grid-column: 1/10;
+   }
+   .proceso p {
+      font-size: 1.2em;
+      font-weight: lighter;
+      margin-top: 1em;
+   }
+
+   .index-gallery  {
+      width: 100vw;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+   }
+
+   .index-gallery .gallery__title {
+      font-size: 2em;
+   }
+   .index-gallery .foto1 img {
+      height: 300px;
+   }
+   .index-gallery .foto1 img:nth-child(1) {
+      height: 300px;
+   }
+   .testimonials {
+
+      height: 650px;
+      width: 100vw;
+      background-image: none;
+      background-color: #ececec;
+   }
+ .testimonials-title {
+   margin-top: 2em;
+ }
+
+
+ .testimonials-title h5,
+ .testimonials-title h2 {
+    font-size: 1.3em;
+ }
+ .testimonials-title .fas {
+   font-size: 1.2em;
+ }
+
+ .testimonials .slideshow-container {
+    width: 100vw;
+    margin-left: -2em;
+    margin-top: -5em;
+ }
+
+ .testimonials .mySlides q {
+    font-size: 1em;
+ }
+
+ .testimonials .dot-container {
+   margin-top:-5em;
+ }
+
+   
+      .services-ocaciones h2 {
+         font-size: 2em;
+      }
+
+      .our-team h2 {
+         font-size: 2em;
+         margin-bottom: 1em;
+      }
+
+
+
+      .footer .formulario {
+         width: 90vw;
+         
+      }
+      .footer {
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         
+      }
+
+    .footer-info {
+       padding-right: 2em;
+    }
+
+
+       /* quienes somos */
+
+       .main-quienes-somos {
+          margin-top: 3em;
+          grid-column: 5 / 10;
+       }
+       .quienes-somos-page h1 {
+          font-size: 1.5em;
+       }
+
+       .quienes-somos-page em {
+          font-size: 1.2em;
+       }
+
+       .quienes-somos-container {
+          padding: 1em 0.2em;
+       }
+
+       .quienes-somos-info h2, 
+       .quienes-somos-info:nth-child(2) {
+         font-size: 2em;
+       }
+
+       .porque-nos-prefieren-tittle h2 {
+          padding: 5px;
+       }
+
+        /* service page */
+
+        .service-page .flota-banner h2 {
+           font-size: 2em;
+           margin-top: 2em;
+        }
+
+        .content-services-page h3 {
+         font-size: 2em;
+         margin-top: 5em;
+        }
+
+        .services-ocaciones .card {
+         margin: 0 auto;
+         margin-left: -3em;
+        }
+
+        .content-services-page .article1 a,
+        .content-services-page .article2 a,
+        .content-services-page .article3 a {
+           margin-bottom: 10em;
+        }
+
+        .content-info-services  h3 {
+           display: none;
+        }
+
+        .content-services-page  .contentInfo-services-img3 {
+         margin-top: 3em;
+        }
+
+        .services-ocaciones  h2 {
+           margin-top: -5em;
+           margin-bottom: 1em;
+
+        }
+
+        .services-ocaciones .card {
+           width: 350px;
+        }
+
+        .services-page-banner2 .banner2-img {
+           background-position: center;
+           height: 300px;
+        }
+
+      .content-services-page .article1 .content-info-services,
+      .content-services-page .article2 .content-info-services,
+      .content-services-page .article3 .content-info-services {
+          margin-top: 5em;
+        }
+        .content-services-page .article2,
+        .content-services-page .article3 {
+         margin-top: -5em;
+       }
+
+        .services-page-banner2-info p,
+        .services-page-banner2-info h2 {
+           padding: .5em;
+        }
+
+      /* Nuestra flota */
+
+      .nuestraFlota-header {
+         height: 200px;
+         
+      }
+
+      .nuestraFlota-header h3 {
+         margin-top: 3em;
+      }
+      
+      .nuestraFlota-header h2 {
+         font-size: 2.5em;
+      }
+      
+      .flota-banner .nuestraFlota-header {
+         padding: 0em;
+         margin-left: 0px;
+      }
+      
+            .nuestra-flotaIcon-section .col-sm-12 {
+               margin: 10px;
+            }
+  
+    .nuestraFlota-container {
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       justify-content: center;
+    }
+
+    .contact-form-area {
+       display: none;
+    }
+
+    .contact-form-area
+    .contact-button-action .btn {
+      font-size: 1em;
+      width: 150px;
+      margin-top: 2em;
+   }
+
+ 
+   .nuestra-flota-content .yates-especificaciones-generales .img-boat {
+    width: 100%;
+   }
+
+   .yates-especificaciones-generales .flotas-icono-especificaciones {
+      margin: 0 auto;
+
+   }
+
+   .especificaciones-info {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+   
+   }
+
+   .nuestra-flota-content .yates-especificaciones-generales .img-boat {
+      width: 100%;
+     }
+  
+    
+
+  .yates-especificaciones-generales .nuestraFlota-especificaciones-strong li {
+     width: 90vw;  
+     margin-left: -4.8em;
+     font-size: 1em;
+   } 
+   
+   .nuestra-flotaIcon-section {
+      margin-top:  -5em;
+   }
+
+   
+   .que-llevar h3 {
+      font-size: 2em;
+   }
+   .que-llevar h4 {
+      font-size: 1.5em;
+   }
+   .que-llevar .que-llevar-items {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+   }
+
+   .proceso img {
+      width: 200px;
+      height: 200px;
+   }
+
+   /* destinos */
+     
+   .pagina-destinos_wrapper h4 {
+      font-size: 1em;
+   }
+   .destinos-content {
+      padding: 1em;
+   }
+   .destinos-content .contenedor-palmilla,
+   .destinos-content .contenedor-catalina {
+     display: flex;
+     flex-direction: column;
+   }
+   .destinos-content .contenedor-puntacana,
+   .destinos-content .contenedor-saona {
+      display: flex;
+      flex-direction: column-reverse;
+   }
+   .destinos-content .contenedor-palmilla img,
+   .destinos-content .contenedor-puntacana img,
+   .destinos-content .contenedor-catalina img,
+   .destinos-content .contenedor-saona img {
+      height: 300px;
+    }
+    .destinos-content .contenedor-palmilla .palmilla-info,
+    .destinos-content .contenedor-puntacana .puntacana-info,
+    .destinos-content .contenedor-catalina .catalina-info,
+    .destinos-content .contenedor-saona .saona-info    {
+       padding: 3em 1em;
+    }
+
+    .destinos-reserva-tu-yate .button {
+       font-size: 1em;
+  
+    }
+
+    .destinos-banner {
+       height: 300px;
+    }
+
+
+   .destinos-banner-content {
+      margin-top: 9em;
+   }
+  
+    .destinos-banner .eligeTudestino-1 h2,
+    .destinos-banner .eligeTudestino-2 h2,
+    .destinos-banner .eligeTudestino-3 h2 {
+      font-size: 1.5em;
+    }
+
+   .destinos-banner .eligeTudestino-2 {
+   margin-left: 2em;
+   }
+
+   .destinos-banner .eligeTudestino-3 {
+   margin-left: 5em;
+   }
+
+   /* contact page */
+
+ 
+   .contact-page .contact-info {
+      display: none;
+   } 
+
+   .contact-page .contact-form-content h2 {
+      font-size: 2em;
+      line-height: 40px;
+   }
+
+   .contact-page .contact-form-content {
+      width: 100vw;
+      height: 100vh;
+      margin: 0 auto;
+   }
+   .contact-page .contact-form-content form {
+      width: 90vw;
+      margin-left: -4em;
+   }
+   .contact-form-content form {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+   }
+
+}
+
+
